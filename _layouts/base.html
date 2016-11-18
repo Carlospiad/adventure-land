@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9">    <![endif]-->
+<head>
+  <meta charset="utf-8">
+		<title>Adventure Land - {{ page.title }}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="format-detection" content="telephone=no">
+		<!-- Style Sheet-->
+		<link rel="stylesheet" type="text/css" href="{% asset_path 'css/style.min.css' %}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{% asset_path 'css/custom.css' %}" media="screen">
+		<!-- favicon -->
+		<link rel="shortcut icon" href="{% asset_path 'img/favicon.ico' %}">
+
+		<!--[if lt IE 9]>
+				<script src="{% asset_path 'js/libs/html5.js' %}"></script>
+		<![endif]-->
+</head>
+<body>
+  {% include header.html %}
+  {% include nav.html %}
+
+  <div class="shifter-page"> <!-- for mobile version -->
+    <!-- todo el contenido excepto header aquí y mobile-nav -->
+    {{ content }}
+    {% include footer.html %}
+  </div>
+
+    {% include mobile-nav.html %}
+
+  <!-- ATTACHMENTS -->
+
+		<script type="text/javascript" src="{% asset_path 'js/libs/jquery-1.10.2.min.js' %}"></script>
+		<script type="text/javascript" src="{% asset_path 'js/libs/jquery.migrate-1.2.1.min.js' %}"></script>
+		<script type="text/javascript" src="{% asset_path 'js/libs/jquery.easing.1.3.js' %}"></script>
+		<script type="text/javascript" src="{% asset_path 'js/libs/jquery.mobile.customized.min.js' %}"></script>
+		<script type="text/javascript" src="{% asset_path 'js/libs/placeholdem.js' %}"></script>
+		<script type="text/javascript" src="{% asset_path 'js/libs/owl.carousel.min.js' %}"></script>
+		<script type="text/javascript" src="{% asset_path 'js/libs/hover.js' %}"></script>
+		<script type="text/javascript" src="{% asset_path 'js/libs/wait.js' %}"></script>
+		<script type="text/javascript" src="{% asset_path 'js/libs/jquery.fs.shifter.min.js' %}"></script>
+		<script type="text/javascript" src="{% asset_path 'js/libs/jquery.plugin.js' %}"></script>
+		<script type="text/javascript" src="{% asset_path 'js/libs/jquery.countdown.js' %}"></script>
+
+		<!-- Gallery -->
+
+		<script type="text/javascript" src="{% asset_path 'js/libs/lightGallery.min.js' %}"></script>
+
+		<!-- Player -->
+
+		<script type="text/javascript" src="{% asset_path 'js/libs/jquery.jplayer.js' %}"></script>
+		<script type="text/javascript" src="{% asset_path 'js/libs/ttw-music-player.js' %}"></script>
+		<script type="text/javascript" src="{% asset_path 'js/playlist-home.js' %}"></script>
+
+		<!-- Custom Js -->
+
+		<script type="text/javascript" src="{% asset_path 'js/custom.js' %}"></script>
+
+		<!-- /ATTACHMENTS -->
+</body>
+</html>
