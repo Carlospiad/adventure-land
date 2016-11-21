@@ -7,7 +7,7 @@
 		/***************************************************
 		1. FORM
 		***************************************************/
-		
+
 		Placeholdem( document.querySelectorAll( '[placeholder]' ) );
 
 
@@ -88,7 +88,7 @@
 				'',
 				''
 			],
-		    items:1
+		    items:4
 		})
 
 		$('.big-album-slider-onepage').owlCarousel({
@@ -187,7 +187,7 @@
 			***************************************************/
 
 			var random = Math.ceil((Math.random() * 10));
-			
+
 			switch(random) {
 				case 1:
 					$( "#contact_verify").replaceWith( "<input type='text' id='contact_verify' value='2+7='>" );
@@ -238,7 +238,7 @@
 				$('#contact_subject').removeClass('contact-required');
 				$('#contact_text').removeClass('contact-required');
 				$('#contact_verify').removeClass('contact-required');
-				
+
 				switch(random) {
 					case 1:
 						if (contact_verify != '2+7=9'){
@@ -386,9 +386,9 @@
 		/***************************************************
 		NEWEST PHOTO HEIGHT
 		***************************************************/
-		
+
 		$('.newest-photos-slider ul li').height($('.newest-photos-slider ul li').width());
-		
+
 	});
 
 })(jQuery);
