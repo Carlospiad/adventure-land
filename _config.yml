@@ -37,7 +37,7 @@ assets:
     - _assets/css
     - _assets/fonts
     - _assets/img
-
+    - _assets/images
 # Build settings
 markdown: kramdown
 gems:

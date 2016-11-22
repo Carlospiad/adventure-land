@@ -3,4 +3,3 @@ _site
 .jekyll-metadata
 .asset-cache
 *.DS_Store
-s3_website.yml
