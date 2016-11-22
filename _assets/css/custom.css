@@ -84,7 +84,7 @@ header .top-menu {
   height: 110px;
   position: fixed;
   display: inline-block;
-  background-color: #fff;
+  background-color: #F1F3F2;
 }
 
 .nav-main-menu .menu {
@@ -95,6 +95,10 @@ header .top-menu {
 
 .shifter-page {
   padding-top: 0px;
+}
+
+.nav-main-menu .menu li:first-child {
+  margin-right: 150px;
 }
 
 .nav-main-menu .menu li .logo {
@@ -118,10 +122,6 @@ header .top-menu {
   color: #000;
 }
 
-.nav-main-menu .menu li .logo {
-  background-color: #fff;
-}
-
 .nav-main-menu .menu li .submenu.current, .nav-main-menu .menu li .submenu:hover {
   background-color: #F26223 !important;
   color: #fff;
@@ -131,8 +131,14 @@ header .top-menu {
   padding-top: 60px;
 }
 
+.nav-main-menu .menu li .logo {
+  background-color: #F1F3F2;
+}
+
 .nav-main-menu .menu li a.submenu {
-    background-color: #fff;
+    background-color: #F1F3F2;
+    font-size: 14px;
+    font-style: italic;
     padding: 43px 31px 43px 17px;
 }
 
@@ -335,5 +341,11 @@ footer, .copyright {
 @media all and (max-width: 1050px){
   .nav-main-menu {
     display: none !important;
+  }
+}
+
+@media all and (max-width: 1285px){
+  .img-wrapper {
+    padding: 30px 20px !important;
   }
 }

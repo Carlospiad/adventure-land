@@ -265,7 +265,7 @@ function init() {
     var marker = new google.maps.Marker({
         position: new google.maps.LatLng(9.0015451, -79.5303901),
         map: map,
-        icon: "../../img/marker.png'",
+        icon: "/../../assets/img/marker.png",
         title: 'Adventure Land'
     });
 }
