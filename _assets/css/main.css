@@ -3364,7 +3364,7 @@ section .cs .theme_button:hover {
 }
 
 .home-page-header .affix-wrapper .page_header {
-	background: #fff;
+	background: #f0f0f0;
 }
 
 /*// Header colors //*/
@@ -5045,9 +5045,13 @@ section .cs .theme_button:hover {
 .page_header_wrapper {
 	z-index: 300;
 }
+li.main-nav.main-nav-right ul li.active a {
+    background-color: #f26223;
+    color: #fff;
+}
 
 .page_header.affix .sf-menu .main-nav > ul > li > a {
-	padding: 38px 19px;
+    padding: 20px 19px;
 }
 
 @media (max-width: 1280px) {
@@ -5064,7 +5068,7 @@ section .cs .theme_button:hover {
 
 .page_header.affix .list-logo {
 	display: inline-block;
-	float: none;
+	float: left;
 }
 
 .page_header.affix .list-logo .logo_image {
@@ -5073,8 +5077,7 @@ section .cs .theme_button:hover {
 
 .page_header.affix .logo_image {
 	position: static;
-	width: 100px;
-	height: 100px;
+	width: 170px;
 	margin: 0;
 	-webkit-transition: 0s;
 	transition: 0s;
