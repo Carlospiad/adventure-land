@@ -1,60 +1,108 @@
 <footer class="page_footer footer-01 section_padding_top_115 section_padding_bottom_55">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="footer-logo-wrapp2 text-center">
-								<a href="{% link index.html %}" class="footer-logo">
-									<img src="{% asset_path 'images/logo_bottom.png' %}" alt="">
-								</a>
-							</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<img src="{% asset_path 'images/logo-bottom.png' %}" alt="Adventure Land Panamá PlayGround" class="logo-footer">
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+				<br>
+				<a href="#" class="button-adventure">Visítenos o contáctenos</a>
+
+			</div>
+			<div class="col-md-3">
+				<h3>Contáctenos</h3>
+				<p>Localidad, Calle Lorem Ipsum, <br>Edificio Lorem Ipsum, Local 02<br> Ciudad de Panamá</p>
+				<ul class="contact-info">
+					<li>
+						<div class="contact-icon">
+							<i class="fa fa-phone" aria-hidden="true"></i>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="footer-nav-wrapp">
-								<ul class="footer-nav">
-									<li>
-										<a href="#">Home</a>
-									</li>
-									<li>
-										<a href="#">About Me</a>
-									</li>
-									<li>
-										<a href="#">News</a>
-									</li>
-									<li>
-										<a href="#">Portfolio</a>
-									</li>
-									<li class="footer-logo-wrapp">
-										<a href="{% link index.html %}" class="footer-logo">
-											<img src="{% asset_path 'images/logo_bottom.png' %}" alt="">
-										</a>
-									</li>
-									<li>
-										<a href="#">Classes </a>
-									</li>
-									<li>
-										<a href="#">Schedule</a>
-									</li>
-									<li>
-										<a href="#">Contacts</a>
-									</li>
-									<li>
-										<a href="#">Shop</a>
-									</li>
-								</ul>
-							</div>
+						<div class="contact-desc">
+							<a href="tel:{{site.phone_url}}">{{site.phone}}</a>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-6 col-md-6 col-lg-6 text-xs-center text-right">
-							<p class="copyrights-text-01">&copy; 2016
-								<a href="http://modernwebtemplates.com">MWTemplates</a>
-							</p>
+
+					</li>
+					<li>
+						<div class="contact-icon">
+							<i class="fa fa-envelope-o" aria-hidden="true"></i></i>
 						</div>
-						<div class="col-sm-6 col-md-6 col-lg-6 text-xs-center text-left">
-							<p class="copyrights-text-02">All rights reserved</p>
+						<div class="contact-desc">
+							<a href="mailto:{{site.email}}">{{site.email}}</a>
 						</div>
-					</div>
-				</div>
-			</footer>
+
+					</li>
+					<li>
+						<div class="contact-icon">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>
+						</div>
+						<div class="contact-desc">
+							{{site.open}}
+						</div>
+
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h3>Nuestro Website</h3>
+				<ul class="footer-menu">
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Nosotros</a></li>
+					<li><a href="#">Atracciones</a></li>
+					<li><a href="#">Café</a></li>
+					<li><a href="#">Ubicación</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-3">
+				<h3>redes sociales</h3>
+				<p>Síguenos en:</p>
+				<ul class="contact-info">
+					<li>
+						<div class="contact-icon social">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</div>
+						<div class="contact-desc">
+							<a href="tel:{{site.phone_url}}">Facebook</a>
+						</div>
+
+					</li>
+					<li>
+						<div class="contact-icon social">
+							<i class="fa fa-twitter" aria-hidden="true"></i></i>
+						</div>
+						<div class="contact-desc">
+							<a href="mailto:{{site.email}}">Twitter</a>
+						</div>
+
+					</li>
+					<li>
+						<div class="contact-icon social">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						</div>
+						<div class="contact-desc">
+							Instagram
+						</div>
+
+					</li>
+					<li>
+						<div class="contact-icon social">
+							<i class="fa fa-google-plus" aria-hidden="true"></i>
+						</div>
+						<div class="contact-desc">
+							Google Plus
+						</div>
+
+					</li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-xs-center text-left">
+				<p class="copyrights-text-01">&copy; 2016
+					<a href="http://modernwebtemplates.com">Adventure Land</a> - Desarrollado por: <a href="http://bluetideconsulting.com">BlueTide Web Consulting</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>

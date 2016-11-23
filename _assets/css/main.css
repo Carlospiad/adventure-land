@@ -4,7 +4,7 @@
 
 @import 'https://fonts.googleapis.com/css?family=Open Sans:300i,300,400,700,900';
 
-@import 'https://fonts.googleapis.com/css?family=Roboto:300';
+@import 'https://fonts.googleapis.com/css?family=Open Sans:300';
 
 @import 'https://fonts.googleapis.com/css?family=Alex+Brush';
 /*
@@ -926,9 +926,77 @@ li.media:after {
 }
 
 .section_padding_top_115 > [class*="container"] {
-	padding-top: 115px;
+	padding-top: 50px;
 }
-
+.page_footer p {
+    color: #a0a0a0;
+    line-height: 24px;
+}
+footer.page_footer h3 {
+    color: #fff;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: -1px;
+		margin-bottom: 25px;
+}
+ul.contact-info li {
+	list-style-type: none;
+	margin-left: -25px;
+	border-bottom: 1px solid #565656;
+	margin-top: 15px;
+}
+.contact-icon {
+    color: #f26223;
+    font-size: 30px;
+    width: 40px;
+    float: left;
+}
+.contact-desc {
+    color: #fff;
+    padding-left: 40px;
+    margin-bottom: 12px;
+}
+.contact-desc a {
+    color: #fff;
+}
+.contact-desc a:hover {
+    color: #f26223;
+}
+.contact-icon.social {
+    background-color: #d8d8d8;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+ul.footer-menu li {
+    color: #cacaca;
+    list-style-type: none;
+    margin-left: -20px;
+}
+ul.footer-menu li a{
+    color: #a0a0a0;
+}
+ul.footer-menu li a:hover{
+    color: #fff;
+}
+img.logo-footer {
+    margin-bottom: 25px;
+}
+a.button-adventure {
+    background-color: #f26223;
+    color: #fff;
+    font-size: 14px;
+    padding: 7px 20px;
+}
+a.button-adventure:hover {
+    background-color: #0d2a7d;
+    color: #fff;
+}
 .section_padding_top_135 > [class*="container"] {
 	padding-top: 135px;
 }
@@ -990,9 +1058,7 @@ li.media:after {
 	padding-bottom: 50px;
 }
 
-.section_padding_bottom_55 > [class*="container"] {
-	padding-bottom: 55px;
-}
+
 
 .section_padding_bottom_60 > [class*="container"] {
 	padding-bottom: 60px;
@@ -1220,6 +1286,7 @@ body {
 	background-color: #ffffff;
 	overflow: visible;
 	overflow-x: hidden;
+	    letter-spacing: -0.5px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -3337,7 +3404,7 @@ section .cs .theme_button:hover {
 
 /*// Footer 01 //*/
 .footer-01 {
-	background: #cbcbcb;
+    background: #2f2f2f;
 }
 
 .footer-01 [class*="col-"] {
@@ -3455,10 +3522,14 @@ section .cs .theme_button:hover {
 }
 
 .copyrights-text-01 {
-	font: 14px/16px 'Roboto', 'Arial', sans-serif;
-	color: #929292;
-	margin-top: 28px;
-	margin-right: 85px;
+    color: #efefef;
+    /* margin-top: 40px; */
+    margin-right: 85px;
+    font-size: 11px;
+    border-top: 1px solid #565656;
+    padding-top: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 @media (max-width: 991px) {
@@ -3476,7 +3547,7 @@ section .cs .theme_button:hover {
 }
 
 .copyrights-text-02 {
-	font: 14px/16px 'Roboto', 'Arial', sans-serif;
+	font: 14px/16px 'Open Sans', 'Arial', sans-serif;
 	color: #929292;
 	margin-top: 28px;
 	margin-left: 69px;
@@ -15817,4 +15888,7 @@ isotope portfolio and gallery pos
 .isotope_container {
 	-webkit-transition: height 0.2s ease-in-out 0s;
 	transition: height 0.2s ease-in-out 0s;
+}
+.mt-15{
+	margin-top: 15px;
 }
