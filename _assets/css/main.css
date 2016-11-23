@@ -15894,6 +15894,10 @@ isotope portfolio and gallery pos
     transform: rotate(45deg);
     margin-top: -15px;
 }
+.section-title.bg-blue:after {
+    background-color: #28377a;
+
+}
 .banner-02-wrapp {
     position: relative;
     overflow: hidden;
@@ -15934,6 +15938,12 @@ h3.banner-02__title.shadow {
 .banner-02__content {
 
     padding: 25px 25px 115px;
+}
+#map-adventure{
+	height: 500px;
+}
+.no-padding{
+	padding: 0;
 }
 .plr-20 {
     padding: 20px;
