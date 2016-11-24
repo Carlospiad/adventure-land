@@ -1,0 +1,34 @@
+<div class="ds bg-blue section-title section_padding_top_30 section_padding_bottom_30 text-center">
+  <div class="container-fluid">
+    <h2>Conoce como divertirte en grande</h2>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+  </div>
+</div>
+<div class="page_portfolio columns_padding_0">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+
+        <div class="isotope_container isotope row masonry-layout">
+          {% for image in page.gallery %}
+          <div class="isotope-item col-lg-3 col-md-4 col-sm-6 {{image.attraction}} achievements">
+            <div class="vertical-item gallery-item content-absolute text-center">
+              <div class="item-media">
+                <img src="{{image.image}}" alt="{{image.name}} - {{image.attraction}} - Adventure Land Panamá">
+                <div class="media-links">
+                  <div class="links-wrap">
+                    <a class="p-view prettyPhoto " title="{{image.name}} - {{image.attraction}} - Adventure Land Panamá" data-gal="prettyPhoto[gal]" href="{{image.image}}"></a>
+                    <a class="p-link" title="" href="{{image.link}}"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+        <!-- eof .isotope_container.row -->
+      </div>
+    </div>
+  </div>
+</div>

@@ -5399,16 +5399,16 @@ li.md-hidden {
 }
 
 .banner-02 .banner-02__btn {
-	display: inline-block;
-	width: 60px;
-	height: 60px;
-	background: #f26223;
-	font-size: 0;
-	line-height: 0;
-	text-align: center;
-	position: absolute;
-	bottom: 0;
-	left: 0;
+    display: inline-block;
+    width: 150px;
+    height: 45px;
+    background: #28377a;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 @media (max-width: 1600px) {
@@ -5419,13 +5419,17 @@ li.md-hidden {
 }
 
 .banner-02 .banner-02__btn::before {
-	font-family: 'Flaticon';
-	content: '\f11c';
-	display: inline-block;
-	float: none;
-	font-size: 18px;
-	line-height: 60px;
-	color: #262626;
+    font-family: 'Open Sans';
+    content: 'Conocer más';
+    display: inline-block;
+    float: none;
+    font-size: 16px;
+    line-height: 45px;
+    color: #ffffff;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -1px;
+    text-transform: uppercase;
 }
 
 @media (max-width: 1600px) {
@@ -5436,13 +5440,26 @@ li.md-hidden {
 }
 
 .banner-02 .banner-02__btn:hover {
-	background: #262626;
+    background: #f85e07;
 }
 
 .banner-02 .banner-02__btn:hover::before {
 	color: #fff;
 }
-
+.button-adventure2 {
+    color: #fff;
+    background-color: #ff6108;
+    padding: 7px 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 15px;
+}
+.button-adventure2:hover {
+    background-color: #28377a;
+    color: #fff;
+}
 .banner-02-wrapp {
 	position: relative;
 	overflow: hidden;
@@ -15893,6 +15910,7 @@ isotope portfolio and gallery pos
     -webkit-transform: rotate(7deg);
     transform: rotate(45deg);
     margin-top: -15px;
+    z-index: 1;
 }
 .section-title.bg-blue:after {
     background-color: #28377a;
@@ -15938,6 +15956,18 @@ h3.banner-02__title.shadow {
 .banner-02__content {
 
     padding: 25px 25px 115px;
+}
+.filters a {
+    padding: 4px 15px;
+    background-color: #8a8a8a;
+    color: #fff;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+}
+.filters a.selected, .filters a:hover {
+    background-color: #3c4b86;
 }
 #map-adventure{
 	height: 500px;
