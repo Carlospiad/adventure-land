@@ -15916,6 +15916,12 @@ isotope portfolio and gallery pos
     background-color: #28377a;
 
 }
+.bg-blue{
+  background-color: #28377a!important;
+}
+.bg-green {
+    background-color: #4fa93e!important;
+}
 .banner-02-wrapp {
     position: relative;
     overflow: hidden;
@@ -15980,7 +15986,7 @@ nav.menu h3 {
     height: 40px;
     background-color: #fb6104;
     color: #fff;
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
     line-height: 40px;
     border-radius: 3px;
@@ -15991,11 +15997,15 @@ nav.menu h3 {
 }
 .side-desc p {
     font-size: 14px;
-    margin-top: -10px;
+    margin-top: -5px;
+    line-height: 18px;
 }
 .side-title {
     padding-bottom: 10px;
     border-bottom: 1px solid #797979;
+}
+.side-content {
+    margin-top: 15px;
 }
 a#open-button {
     background-color: #ff6108;
@@ -16010,6 +16020,9 @@ a#open-button {
     margin-top: 32px;
     margin-left: 44px;
     color: #fff;
+}
+.side-widget {
+    margin: 0px 0px 40px;
 }
 .page_header.affix a#open-button{
   margin-top: 20px;
