@@ -4,7 +4,7 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2014, Codrops
  * http://www.codrops.com
  */
@@ -13,6 +13,7 @@
 	var bodyEl = document.body,
 		content = document.querySelector( '.content-wrap' ),
 		openbtn = document.getElementById( 'open-button' ),
+		openbtn2 = document.getElementById( 'open-button-toggle' ),
 		closebtn = document.getElementById( 'close-button' ),
 		isOpen = false,
 
@@ -52,7 +53,7 @@
 			setTimeout( function() {
 				// reset path
 				path.attr( 'd', initialPath );
-				isAnimating = false; 
+				isAnimating = false;
 			}, 300 );
 		}
 		else {
@@ -61,7 +62,7 @@
 			var pos = 0,
 				nextStep = function( pos ) {
 					if( pos > stepsTotal - 1 ) {
-						isAnimating = false; 
+						isAnimating = false;
 						return;
 					}
 					path.animate( { 'path' : steps[pos] }, pos === 0 ? 400 : 500, pos === 0 ? mina.easein : mina.elastic, function() { nextStep(pos); } );
