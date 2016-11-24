@@ -7,13 +7,22 @@
 
 <div class="banner-02 section_padding_top_30 section_padding_bottom_10 plr-20">
   <div class="container-fluid">
-    <div class="filters isotope_filters isotope_filters2 text-center">
-      <a href="#" data-filter="*" class="selected">Todas</a>
-      <a href="#" data-filter=".0a">- 3 Años</a>
-      <a href="#" data-filter=".3a">+ 3 Años</a>
-      <a href="#" data-filter=".10a">+ 10 Años</a>
-      <a href="#" data-filter=".adultos">Adultos</a>
+    <div class="row">
+      <div class="col-md-12 text-center filter-title">
+        Filtro por edades
+      </div>
+      <div class="col-md-12">
+        <div class="filters isotope_filters isotope_filters2 text-center">
+          <a href="#" data-filter="*" class="selected">Todas</a>
+          <a href="#" data-filter=".0a">- 3 Años</a>
+          <a href="#" data-filter=".3a">+ 3 Años</a>
+          <a href="#" data-filter=".10a">+ 10 Años</a>
+          <a href="#" data-filter=".adultos">Adultos</a>
+        </div>
+      </div>
+
     </div>
+
     <div class="row isotope_container isotope" data-filters=".isotope_filters">
       {% for attraction in page.attractions %}
       <div class="isotope-item text-xs-center col-sm-6 col-md-6 col-lg-4 p-15 {{attraction.age}}">

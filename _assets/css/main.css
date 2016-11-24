@@ -16007,6 +16007,13 @@ nav.menu h3 {
 .side-content {
     margin-top: 15px;
 }
+.filter-title {
+    margin-left: -136px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #2f2f2f;
+    margin-bottom: -5px;
+}
 a#open-button {
     background-color: #ff6108;
     padding: 0px 10px;
@@ -16041,4 +16048,7 @@ a#open-button {
 }
 .mb-25{
 	margin-bottom: 25px!important;
+}
+#map-adventure{
+  height: 500px;
 }
