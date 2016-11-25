@@ -4822,6 +4822,7 @@ section .cs .theme_button:hover {
 .sf-menu .main-nav {
 	padding: 0;
 	margin: 0;
+  min-width: 550px;
 }
 
 .sf-menu .main-nav > ul {
@@ -16101,9 +16102,8 @@ a.side-menu-open.responsive {
   right: 0;
   background: rgba(0, 0, 0, 0.75);
 }
-.scroll-y{
-  overflow-y: scroll;
-}
+
+
 @media (max-width: 1630px) {
   .banner-02__block h3 {
       font-size: 50px;
@@ -16137,6 +16137,9 @@ a.side-menu-open.responsive {
       font-size: 16px;
       top: 50%;
   }
+  .main-nav-right {
+    float: none;
+  }
 }
 @media (max-width: 1150px) {
   .banner-02__block h3 {
@@ -16151,6 +16154,7 @@ a.side-menu-open.responsive {
     text-align: center;
     margin-top: 5px;
   }
+
 }
 @media (max-width: 970px) {
   .banner-02__block h3 {

@@ -83,8 +83,8 @@ body,
 	height: 100%;
 	right:0;
 	background: #424242;
-	padding: 2.5em 1.5em 0;
 	font-size: 1.15em;
+	overflow: hidden;
 	-webkit-transform: translate3d(320px,0,0);
 	transform: translate3d(320px,0,0);
 	-webkit-transition: -webkit-transform 0.4s;
@@ -92,7 +92,13 @@ body,
 	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 }
-
+nav.menu.scroll-y {
+    padding: 2.5em 1.5em 0;
+    width: 318px;
+}
+.scroll-y{
+  overflow-y: scroll;
+}
 .menu,
 .icon-list {
 	height: 100%;
