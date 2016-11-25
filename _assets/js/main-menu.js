@@ -13,6 +13,7 @@
 	var bodyEl = document.body,
 		content = document.querySelector( '.content-wrap' ),
 		openbtn = document.getElementById( 'open-button' ),
+		toggle = document.getElementById("open-button-toggle");
 		closebtn = document.getElementById( 'close-button' ),
 		isOpen = false;
 
@@ -45,6 +46,12 @@
 		}
 		isOpen = !isOpen;
 	}
+
+
+
+	toggle.addEventListener('click', function() {
+		toggleMenu();
+	});
 
 	init();
 
