@@ -3363,7 +3363,7 @@ section .cs .theme_button:hover {
 }
 
 .home-page-header .sf-menu .main-nav > ul > li > a {
-	padding: 32px 12px;
+	padding: 32px 11px;
 }
 
 
@@ -16100,6 +16100,9 @@ a.side-menu-open.responsive {
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.75);
+}
+.scroll-y{
+  overflow-y: scroll;
 }
 @media (max-width: 1630px) {
   .banner-02__block h3 {
