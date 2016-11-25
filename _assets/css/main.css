@@ -5055,12 +5055,12 @@ li.main-nav.main-nav-right ul li.active a {
 }
 
 .page_header.affix .sf-menu .main-nav > ul > li > a {
-    padding: 20px 19px;
+    padding: 20px 11px;
 }
 
 @media (max-width: 1280px) {
 	.page_header.affix .sf-menu .main-nav > ul > li > a {
-		padding: 23px 15px;
+		padding: 23px 11px;
 	}
 }
 
