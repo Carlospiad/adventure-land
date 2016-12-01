@@ -149,11 +149,11 @@ header .top-menu {
 .slider-wrapp .main-slider .img-1 {
   background: url(../img/slider/1.jpg) no-repeat 100% 100%; }
 .slider-wrapp .main-slider .img-2 {
-  background: url(../img/slider/2.jpg) no-repeat 100% 100%; }
+  background: url(../img/slider/1.jpg) no-repeat 100% 100%; }
 .slider-wrapp .main-slider .img-3 {
-  background: url(../img/slider/3.jpg) no-repeat 100% 100%; }
+  background: url(../img/slider/1.jpg) no-repeat 100% 100%; }
 .slider-wrapp .main-slider .img-4 {
-  background: url(../img/slider/4.jpg) no-repeat 100% 100%; }
+  background: url(../img/slider/1.jpg) no-repeat 100% 100%; }
 
 .slider-wrapp .main-slider .item .cover {
   background-color: rgba(0,0,0,0);
@@ -286,7 +286,7 @@ header .top-menu {
 .main-content {
   background-color: #F1F3F2;
   max-width: 100%;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
 }
 
 .list li .list-wrapp img {
