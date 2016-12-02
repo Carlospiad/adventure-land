@@ -1,0 +1,28 @@
+<br>
+<br>
+<div class="ds page-classes section_padding_top_100 section_padding_bottom_20">
+  <div class="container">
+    <div class="row">
+      {% for category in page.eventos %}
+      <div class="col-md-4 col-lg-4">
+        <div class="classes-01">
+          <figure class="classes-01__img">
+            <a href="#">
+              <img src="{{category.image}}" alt="">
+            </a>
+          </figure>
+          <div class="classes-01__content">
+            <div class="classes-01__content-wrapp">
+              <h3 class="classes-01__title">
+                {{category.title}}
+              </h3>
+              <p class="classes-01__text">{{category.description}}</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
