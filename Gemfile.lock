@@ -5,13 +5,6 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     colorator (1.1.0)
     concurrent-ruby (1.0.2)
-<<<<<<< HEAD
-    em-websocket (0.5.1)
-      eventmachine (>= 0.12.9)
-      http_parser.rb (~> 0.6.0)
-    eventmachine (1.2.1)
-=======
->>>>>>> f01105ae8c46c3aa35a0f7e4c5e8c73085c1da4f
     execjs (2.7.0)
     extras (0.1.0)
       forwardable-extended (~> 2.5)
@@ -75,7 +68,7 @@ DEPENDENCIES
   uglifier
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.3.0p0
 
 BUNDLED WITH
    1.13.6
