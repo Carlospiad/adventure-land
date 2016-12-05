@@ -8572,7 +8572,7 @@ ul.pagination.pagination-type-1 li:last-child a:hover::before, ul.pagination.pag
 
 .title-block-01 {
 	font: 46px/48px 'Open Sans', 'Arial', sans-serif;
-	color: #fff;
+	color: #E64E07;
 	text-transform: uppercase;
 	position: relative;
 	z-index: 2;
@@ -8588,7 +8588,7 @@ ul.pagination.pagination-type-1 li:last-child a:hover::before, ul.pagination.pag
 
 .title-block-02 {
 	font: 500 138px/138px 'Open Sans', 'Arial', sans-serif;
-	color: #fff;
+	color: #E64E07;
 	opacity: 0.03;
 	display: inline-block;
 	float: none;
