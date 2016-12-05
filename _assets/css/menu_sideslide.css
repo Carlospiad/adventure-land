@@ -188,3 +188,7 @@ nav.menu.scroll-y {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
+
+.slider_padding{
+	padding-top: 90px;
+}
