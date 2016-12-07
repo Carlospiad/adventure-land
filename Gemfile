@@ -18,5 +18,5 @@ gem "uglifier"
 group :jekyll_plugins do
   gem "jekyll-assets", "~> 2.2.8"
   gem "jekyll-feed", "~> 0.6"
-  #gem 'jekyll-livereload'
+  gem 'jekyll-livereload'
 end

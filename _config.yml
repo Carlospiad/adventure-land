@@ -25,7 +25,7 @@ ig: https://www.instagram.com/
 pi: https://es.pinterest.com/
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#host: "192.168.1.10"
+host: "192.168.1.10"
 port: 8000
 livereload: true     # You no longer need to include --livereload
 # Asset configuration
@@ -51,5 +51,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .asset-cache/
-#livereload: true     # You no longer need to include --livereload
-#reload_port: 5678 # If you don't want to use the default port
+livereload: true     # You no longer need to include --livereload
+reload_port: 5678 # If you don't want to use the default port

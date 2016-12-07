@@ -52,10 +52,10 @@
   font-style: normal;
 }
 .font-adventure{
-	font-family: Adventure;
+	font-family: Adventure!important;
 }
 .font-adventure-hollow{
-	font-family: AdventureHollow;
+	font-family: AdventureHollow!important;
 }
 .breadcrumbs-01 {
 	position: relative;
@@ -131,9 +131,9 @@
 }
 
 .page_breadcrumbs__wrapper {
-	position: relative;
-	padding: 110px 0 83px;
-	box-sizing: border-box;
+    position: relative;
+    padding: 150px 0 60px;
+    box-sizing: border-box;
 }
 
 .page_breadcrumbs__wrapper::before {
@@ -6453,8 +6453,8 @@ li.md-hidden {
 }
 
 .contact-form-01 {
-	background: #f5f5f5;
-	padding: 85px 40px 40px;
+    background: #28377a;
+    padding: 45px 40px 40px;
 }
 
 @media (max-width: 480px) {
@@ -6464,24 +6464,50 @@ li.md-hidden {
 }
 
 .contact-form-01 .contact-form-01__title {
-	font: 36px/40px 'Open Sans', 'Arial', sans-serif;
-	color: #262626;
-	position: relative;
-	margin-bottom: 28px;
-	padding-left: 10px;
+    font: 40px/40px 'Open Sans', 'Arial', sans-serif;
+    color: #ffffff;
+    position: relative;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -2px;
 }
 
 .contact-form-01 .contact-form-01__title::before {
-	font: 500 108px/90px 'Open Sans', 'Arial', sans-serif;
-	color: #5f5f5f;
+	font: 500 90px/70px 'Open Sans', 'Arial', sans-serif;
+	color: #fff;
 	opacity: 0.07;
-	content: 'Write';
+	content: 'Escíbenos';
 	display: inline-block;
 	float: none;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	text-transform: capitalize;
+}
+.contact-form small {
+    font-size: 12px;
+    color: #c7c7c7;
+}
+.section-title.no-after:after {
+    content: initial;
+}
+.section-title.no-after.bg-white h2 {
+    color: #001671;
+    font-size: 50px;
+}
+.section-title.no-after.bg-white p {
+    color: #545454;
+}
+.contact-01-info h4{
+
+    color: #545454;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 14px;
+
+}
+.contact-01-info p{
+    color: #545454;
 }
 
 @media (max-width: 480px) {
@@ -6526,25 +6552,29 @@ li.md-hidden {
 }
 
 .contact-form-01 .contact-form-message .form-control {
-	box-sizing: border-box;
-	height: 120px;
-	padding-top: 10px;
-	padding-bottom: 40px;
+    box-sizing: border-box;
+    height: 160px;
+    padding-top: 10px;
+    padding-bottom: 40px;
 }
-
+#map-adventure.contact-page {
+    height: 608px;
+}
 .contact-form-01 .contact-form-message .contact-form-01__button {
-	font: bold 10px/12px 'Open Sans', 'Arial', sans-serif;
-	position: absolute;
-	text-transform: uppercase;
-	color: #262626;
-	background: #f26223;
-	border: none;
-	border: none;
-	padding: 10px 22px;
-	bottom: 0;
-	right: 0;
-	-webkit-transition: 0.5s all;
-	transition: 0.5s all;
+    font: bold 14px/12px 'Open Sans', 'Arial', sans-serif;
+    position: absolute;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #f26223;
+    border: none;
+    border: none;
+    padding: 10px 22px;
+    bottom: 0;
+    right: 0;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    font-weight: 900;
+    font-style: italic;
 }
 
 .contact-form-01 .contact-form-message .contact-form-01__button:hover {
@@ -6552,6 +6582,9 @@ li.md-hidden {
 	color: #fff;
 	-webkit-transition: 0.5s all;
 	transition: 0.5s all;
+}
+.padding-top-90 {
+  padding-top: 90px;
 }
 
 /* Google map */
@@ -6578,14 +6611,14 @@ li.md-hidden {
 }
 
 .google-map-01__list-wrapp {
-	position: relative;
-	background: rgba(249, 200, 9, 0.9);
-	display: inline-block;
-	height: 608px;
-	float: none;
-	padding: 82px 30px 20px 84px;
-	box-sizing: border-box;
-	width: 385px;
+    position: relative;
+    background: rgba(255, 97, 8, 0.93);
+    display: inline-block;
+    height: 698px;
+    float: none;
+    padding: 172px 30px 20px 84px;
+    box-sizing: border-box;
+    width: 385px;
 }
 
 @media (max-width: 767px) {
