@@ -6621,6 +6621,11 @@ li.md-hidden {
     width: 385px;
 }
 
+a.social-media i {
+    font-size: 24px;
+    margin-left: 4px;
+    color: #fff;
+}
 @media (max-width: 767px) {
 	.google-map-01__list-wrapp {
 		width: 100%;
