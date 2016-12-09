@@ -46,7 +46,86 @@ attractions: [
   "link": "#"
 }
 ]
+gallery: [
+{
+  "name": "Lorem Ipsum",
+  "image": "http://placehold.it/1000x1484",
+  "attraction": "play",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "link": "#"
+},
+{
+  "name": "Lorem Ipsum",
+  "image": "http://placehold.it/1000x820",
+  "attraction": "futbol",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "link": "#"
+},
+{
+  "name": "Lorem Ipsum",
+  "image": "http://placehold.it/1600x1500",
+  "attraction": "golf",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "link": "#"
+},
+{
+  "name": "Lorem Ipsum",
+  "image": "http://placehold.it/1000x704",
+  "attraction": "play",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "link": "#"
+},
+{
+  "name": "Lorem Ipsum",
+  "image": "http://placehold.it/1000x781",
+  "attraction": "laser",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "link": "#"
+},
+{
+  "name": "Lorem Ipsum",
+  "image": "http://placehold.it/1000x665",
+  "attraction": "futbol",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "link": "#"
+},
+{
+  "name": "Lorem Ipsum",
+  "image": "http://placehold.it/1000x548",
+  "attraction": "laser",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "link": "#"
+},
+]
 ---
+
+
 {% include title.html %}
-{% include index/attractions.html %}
+
+<div class="section_padding_top_30 section_padding_bottom_30">
+  <div class="container parallax-content">
+    <div class="row">
+
+
+      <div class="col-md-3">
+        <img class="circle mb-30" src="http://placehold.it/512x512">
+
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc mi, ultrices id sollicitudin eget, dapibus eget libero</p>
+        <p>Cras feugiat eget elit sit amet mollis. Nullam sem nunc, faucibus eu eros vel, dignissim ultrices quam. Suspendisse molestie libero eget efficitur luctus. Vestibulum et cursus metus. Cras nec tristique lorem.</p>
+        <p>Quisque vel enim luctus, congue nulla malesuada, cursus nulla. </p>
+      </div>
+      <div class="col-md-9">
+
+        {% include attractions/attractions.html %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <a href="#" class="button-adventure2">Reserve el parque para su evento</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 {% include index/gallery.html %}
