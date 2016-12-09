@@ -1316,6 +1316,10 @@ body {
 	overflow-x: hidden;
 	    letter-spacing: -0.5px;
 }
+body {
+    font-size: 14px;
+    color: #717171;
+}
 
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1;
@@ -4598,7 +4602,7 @@ section .cs .theme_button:hover {
     background: #262626;
     text-align: center;
     left: -100px;
-    margin-top: -30px;
+    top: 40%;
 }
 
 @media (max-width: 600px) {
@@ -4641,7 +4645,7 @@ section .cs .theme_button:hover {
     background: #262626;
     text-align: center;
     right: -100px;
-    margin-top: -30px;
+    top: 40%;
 }
 
 @media (max-width: 600px) {
@@ -16135,9 +16139,18 @@ a.side-menu-open.responsive {
     border-top: 10px solid #ff6108;
     background-size: cover;
 }
+h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #28377a;
+}
 .parallax-content {
     z-index: 2;
     position: relative;
+}
+.mb-30{
+  margin-bottom: 30px;
 }
 .bg-parallax:after {
   content: " ";

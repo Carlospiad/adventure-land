@@ -25,7 +25,10 @@
   <link rel="stylesheet" href="{% asset_path 'css/menu_sideslide.css' %}">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  {{ page.css }}
   <script src="{% asset_path 'js/vendor/modernizr-2.6.2.min.js' %}"></script>
+
+
 
   <!--[if lt IE 9]>
   <script src="{% asset_path 'js/vendor/html5shiv.min.js' %}"></script>
@@ -108,7 +111,42 @@
         <script src="{% asset_path 'js/main-menu.js' %}"></script>
         <script src="{% asset_path 'js/classie.js' %}"></script>
         <script src="{% asset_path 'js/vendor/owl.carousel.min.js' %}"></script>
+        {{ page.js }}
+        <script>
 
+        	$(document).ready(function() {
+
+        		$('#calendar').fullCalendar({
+
+        			header: {
+        				left: 'prev,next today',
+        				center: 'title',
+        				right: 'month,listYear'
+        			},
+
+        			displayEventTime: true, // don't show the time column in list view
+
+        			// THIS KEY WON'T WORK IN PRODUCTION!!!
+        			// To make your own Google API key, follow the directions here:
+        			// http://fullcalendar.io/docs/google_calendar/
+        			googleCalendarApiKey: 'AIzaSyB8hgXhMk1Du3FtkgwuXCAvlDxRMC7X-2w',
+
+        			// US Holidays
+        			events: 'reseller.bluetideconsulting.com_3sveof4rt9ljcm8fg03iam4498@group.calendar.google.com',
+
+        			eventClick: function(event) {
+        				// opens events in a popup window
+        				window.open(event.url, 'gcalevent', 'width=700,height=600');
+        				return false;
+        			},
+
+
+
+        		});
+
+        	});
+
+        </script>
 
       </body>
 

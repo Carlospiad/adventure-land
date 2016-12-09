@@ -1,5 +1,4 @@
-html,
-body,
+
 .menu-wrap a {
 	color: #b8b7ad;
 }
@@ -187,8 +186,4 @@ nav.menu.scroll-y {
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
-}
-
-.slider_padding{
-	padding-top: 90px;
 }
