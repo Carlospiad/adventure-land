@@ -1676,7 +1676,7 @@ ol.list3 li:after {
 
 .list4 li::before {
 	font-family: 'FontAwesome';
-	content: '\f206';
+	content: '\f0f4';
 	color: #f26223;
 	position: absolute;
 	top: 0;
@@ -6030,7 +6030,7 @@ li.md-hidden {
 }
 
 .classes-single-content-wrap .button-01 {
-	color: #262626;
+	color: #fff;
 	margin-left: -25px;
 	margin-bottom: -5px;
 }
@@ -15971,7 +15971,7 @@ isotope portfolio and gallery pos
 }
 .banner-02__block h3{
     font-family: 'Adventure';
-    font-size: 60px;
+    font-size: 70px;
 		line-height: 45px;
 		color:#ff6108;
 }
@@ -15986,6 +15986,30 @@ h3.banner-02__title.shadow {
     font-family: 'Adventure';
 }
 .banner-02__block:after {
+    width: 50px;
+    height: 5px;
+    background-color: #ff6108;
+    content: '';
+    position: absolute;
+    margin-top: 5px;
+}
+.banner-02__block_atr h3{
+    font-family: 'Adventure';
+    font-size: 45px;
+		line-height: 30px;
+		color:#ff6108;
+}
+h3.banner-02__title_atr.shadow {
+    color: #000;
+    opacity: 0.03;
+    font-size: 60px;
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 10px;
+    line-height: 50px;
+    font-family: 'Adventure';
+}
+.banner-02__block_atr:after {
     width: 50px;
     height: 5px;
     background-color: #ff6108;
@@ -16310,4 +16334,39 @@ h4 {
     text-align: center;
   }
 
+}
+
+
+.box_style_2 {
+	padding:10px 25px 0 25px;
+	margin-bottom:20px;
+	border:1px dashed #ddd;
+}
+.box_style_2 h4{
+	margin:10px 0 20px;
+}
+.box_style_2 ul{
+	padding-left:20px;
+	padding-bottom:10px;
+}
+.box_style_2 ul li{
+	margin-bottom:10px;
+}
+.box_style_2 ul li:last-child{
+	margin-bottom:0;
+}
+.float-left{
+  float: left;;
+}
+.step-img {
+  width: 35px;
+  float: left;
+}
+.step-desc {
+  padding-left: 35px;
+}
+.step-desc p {
+  font-size: 15px;
+  margin-top: -5px;
+  margin-bottom: 10px;
 }
