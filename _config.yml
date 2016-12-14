@@ -15,8 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: Advventure Land Panamá
 email: info@adventureland.com
-phone: +507 1234 5678
-phone_url: 50712345678
+phone: +507 3874166
+phone_url: 5073874166
 open: L-D 10:00am - 9:00pm
 fb: http://facebook.com
 tw: http://twitter.com
@@ -25,7 +25,7 @@ ig: https://www.instagram.com/
 pi: https://es.pinterest.com/
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-host: "192.168.1.10"
+# host: "192.168.1.10"
 port: 8000
 livereload: true     # You no longer need to include --livereload
 # Asset configuration
