@@ -3,14 +3,14 @@
 		<div class="row">
 			<div class="col-md-3 mb-25">
 				<img src="{% asset_path 'images/logo-bottom.png' %}" alt="Adventure Land Panamá PlayGround" class="logo-footer">
-				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+				<p>¡En Adventure Land todos se entretienen! Así los invitamos a vivir la diversión al máximo con familia o amigos.</p>
 				<br>
-				<a href="#" class="button-adventure">Visítenos o contáctenos</a>
+				<a href="{% link contacto.html %}" class="button-adventure">Visítenos o contáctenos</a>
 
 			</div>
 			<div class="col-md-3 mb-25">
 				<h3>Contáctenos</h3>
-				<p>Localidad, Calle Lorem Ipsum, <br>Edificio Lorem Ipsum, Local 02<br> Ciudad de Panamá</p>
+				<p>Av. Principal de Llano Bonito y calle 3<sup>a</sup><br> Edif. Prestige Storage, piso 3 <br> Juan Díaz, Ciudad de Panamá</p>
 				<ul class="contact-info">
 					<li>
 						<div class="contact-icon">
@@ -44,12 +44,12 @@
 			<div class="col-md-3 mb-25">
 				<h3>Nuestro Website</h3>
 				<ul class="footer-menu">
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Nosotros</a></li>
-					<li><a href="#">Atracciones</a></li>
-					<li><a href="#">Café</a></li>
-					<li><a href="#">Ubicación</a></li>
-					<li><a href="#">Contacto</a></li>
+					<li><a href="{% link index.html %}">Inicio</a></li>
+					<li><a href="{% link planea.html %}">Planea Tu Evento</a></li>
+					<li><a href="{% link atracciones.html %}">Atracciones</a></li>
+					<li><a href="{% link cafe.html %}">Café</a></li>
+					<li><a href="{% link faqs.html %}">FAQs</a></li>
+					<li><a href="{% link contacto.html %}">Contacto</a></li>
 				</ul>
 			</div>
 
@@ -62,7 +62,7 @@
 							<i class="fa fa-facebook" aria-hidden="true"></i>
 						</div>
 						<div class="contact-desc">
-							<a href="tel:{{site.phone_url}}">Facebook</a>
+							<a href="{{site.fb}}">Facebook</a>
 						</div>
 
 					</li>
@@ -71,7 +71,7 @@
 							<i class="fa fa-twitter" aria-hidden="true"></i></i>
 						</div>
 						<div class="contact-desc">
-							<a href="mailto:{{site.email}}">Twitter</a>
+							<a href="{{site.tw}}">Twitter</a>
 						</div>
 
 					</li>
@@ -80,7 +80,7 @@
 							<i class="fa fa-instagram" aria-hidden="true"></i>
 						</div>
 						<div class="contact-desc">
-							Instagram
+							<a href="{{site.ig}}">Instagram</a>
 						</div>
 
 					</li>
@@ -89,7 +89,7 @@
 							<i class="fa fa-google-plus" aria-hidden="true"></i>
 						</div>
 						<div class="contact-desc">
-							Google Plus
+							<a href="{{site.gp}}">Google Plus</a>
 						</div>
 
 					</li>
