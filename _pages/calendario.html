@@ -16,51 +16,34 @@ js: <script src='../assets/fullcalendar/lib/moment.min.js'></script><script src=
 
 
       <div class="col-md-3">
-        <img class="circle mb-30" src="http://placehold.it/512x512">
 
-        <p>¡En Adventure Land todos se entretienen! Así los invitamos a vivir la diversión al máximo con familia o amigos.</p>
-
-
-          <div>
-            <div class="steps">
-              <div class="step-img">
-                <img class="circle float-left" src="{% asset_path 'images/bg/bg_item.jpg' %}" alt="" width="25" height="25">
-              </div>
-              <div class="step-desc">
-                <p>La diversión es infinita con nuestros 2700 m2 de espacios acondicionados para fiestas, deportes y actividades recreativas.</p>
-              </div>
-            </div>
-            <br>
-            <div class="steps">
-              <div class="step-img">
-                <img class="circle float-left" src="{% asset_path 'images/bg/bg_item.jpg' %}" alt="" width="25" height="25">
-              </div>
-              <div class="step-desc">
-                <p>Para grandes y chicos: desde playgrounds a partir de los 6 meses hasta arenas de guerra láser, simuladores de golf virtual y canchas de fútbol techadas para jóvenes y adultos.</p>
-              </div>
-            </div>
-            <br>
-            <div class="steps">
-              <div class="step-img">
-                <img class="circle float-left" src="{% asset_path 'images/bg/bg_item.jpg' %}" alt="" width="25" height="25">
-              </div>
-              <div class="step-desc">
-                <p>En Fútbol Town los espera un conjunto de canchas de fútbol 100% climatizadas con grama sintética de alta calidad.</p>
-              </div>
-            </div>
-            <br>
-            <div class="steps">
-              <div class="step-img">
-                <img class="circle float-left" src="{% asset_path 'images/bg/bg_item.jpg' %}" alt="" width="25" height="25">
-              </div>
-              <div class="step-desc">
-                <p>Playground para niños bebés de 6 meses a 2 años, con pared de escalar y Course Roupe para niños a partir de los 4 años.</p>
-              </div>
-            </div>
+        <form class="contact-form contact-form-02 columns_padding_5" method="post" action="/">
+          <h3 class="contact-form-02__title">Cotizador</h3>
+          <small>Rellene todos los campos maracdos con (*)</small>
+          <div class="contact-form-name">
+            <input type="text" aria-required="true" size="30" value="" name="name-cotz" id="name-cotz" class="form-control" placeholder="Nombre Completo *">
           </div>
-
-
-
+          <div class="contact-form-email">
+            <input type="email" aria-required="true" size="30" value="" name="email-cotz" id="email-cotz" class="form-control" placeholder="Email *">
+          </div>
+          <div class="contact-form-email">
+            <input type="number" size="15" value="" name="tel-cotz" id="tel-cotz" class="form-control" placeholder="Teléfono">
+          </div>
+          <div class="contact-form-name">
+            <small>Servicio que desea *:</small>
+            <select class="form-control" id="sel1" aria-required="true">
+              <option>Cumpleaños</option>
+              <option>Eventos Corporativos</option>
+              <option>Eventos Especiales</option>
+              <option>Eventos de Colegios</option>
+              <option>Torneos</option>
+            </select>
+          </div>
+          <div class="contact-form-message">
+            <br>
+          <button type="submit" id="contact_form_submit-cotz" name="contact_submit-cotz" class="contact-form-02__button">Cotizar</button>
+        </div>
+        </form>
       </div>
       <div class="col-md-9">
         <h4>Verificar Disponibilidad</h4>
@@ -71,7 +54,7 @@ js: <script src='../assets/fullcalendar/lib/moment.min.js'></script><script src=
     <div class="row">
       <hr>
       <div class="col-md-12 text-center">
-        <a href="#" class="button-adventure2">Reserve el parque para su evento</a>
+        <a href="{% link contacto.html %}" class="button-adventure2">Reserve el parque para su evento</a>
       </div>
     </div>
 
