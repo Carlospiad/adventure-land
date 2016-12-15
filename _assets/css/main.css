@@ -6473,9 +6473,16 @@ li.md-hidden {
     background: #28377a;
     padding: 45px 40px 40px;
 }
+.contact-form-02 {
+    background: #28377a;
+    padding: 45px 40px 40px;
+}
 
 @media (max-width: 480px) {
 	.contact-form-01 {
+		padding: 85px 20px 20px;
+	}
+  .contact-form-02 {
 		padding: 85px 20px 20px;
 	}
 }
@@ -6488,12 +6495,20 @@ li.md-hidden {
     font-style: italic;
     letter-spacing: -2px;
 }
+.contact-form-02 .contact-form-02__title {
+    font: 40px/40px 'Open Sans', 'Arial', sans-serif;
+    color: #ffffff;
+    position: relative;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -2px;
+}
 
 .contact-form-01 .contact-form-01__title::before {
 	font: 500 90px/70px 'Open Sans', 'Arial', sans-serif;
 	color: #fff;
 	opacity: 0.07;
-	content: 'Escíbenos';
+	content: 'Escríbenos';
 	display: inline-block;
 	float: none;
 	position: absolute;
@@ -6501,8 +6516,21 @@ li.md-hidden {
 	left: 0;
 	text-transform: capitalize;
 }
+.contact-form-02 .contact-form-02__title::before {
+	font: 600 65px/50px 'Open Sans', 'Arial', sans-serif;
+	color: #fff;
+	opacity: 0.07;
+	content: 'Cotiza';
+	display: inline-block;
+	float: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-transform: capitalize;
+}
+
 .contact-form small {
-    font-size: 12px;
+    font-size: 13px;
     color: #c7c7c7;
 }
 .section-title.no-after:after {
@@ -6529,6 +6557,10 @@ li.md-hidden {
 
 @media (max-width: 480px) {
 	.contact-form-01 .contact-form-01__title::before {
+		font-size: 70px;
+		bottom: -10px;
+	}
+  .contact-form-02 .contact-form-02__title::before {
 		font-size: 70px;
 		bottom: -10px;
 	}
@@ -6577,6 +6609,46 @@ li.md-hidden {
 #map-adventure.contact-page {
     height: 608px;
 }
+.contact-form-02 .contact-form-name {
+	margin-bottom: 10px;
+}
+
+.contact-form-02 .contact-form-name .form-control {
+	height: 45px;
+}
+
+.contact-form-02 .contact-form-email {
+	margin-bottom: 10px;
+}
+
+.contact-form-02 .contact-form-email .form-control {
+	height: 45px;
+}
+
+.contact-form-02 .contact-form-subject {
+	margin-bottom: 10px;
+}
+
+.contact-form-02 .contact-form-subject .form-control {
+	height: 45px;
+}
+
+.contact-form-02 .form-control {
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.contact-form-02 .contact-form-message {
+	position: relative;
+}
+
+.contact-form-02 .contact-form-message .form-control {
+    box-sizing: border-box;
+    height: 160px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
 .contact-form-01 .contact-form-message .contact-form-01__button {
     font: bold 14px/12px 'Open Sans', 'Arial', sans-serif;
     position: absolute;
@@ -6593,8 +6665,28 @@ li.md-hidden {
     font-weight: 900;
     font-style: italic;
 }
+.contact-form-02 .contact-form-message .contact-form-02__button {
+    font: bold 14px/12px 'Open Sans', 'Arial', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #f26223;
+    border: none;
+    border: none;
+    padding: 10px 22px;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    font-weight: 900;
+    font-style: italic;
+    width: 100%;
+}
 
 .contact-form-01 .contact-form-message .contact-form-01__button:hover {
+	background: #282828;
+	color: #fff;
+	-webkit-transition: 0.5s all;
+	transition: 0.5s all;
+}
+.contact-form-02 .contact-form-message .contact-form-02__button:hover {
 	background: #282828;
 	color: #fff;
 	-webkit-transition: 0.5s all;
