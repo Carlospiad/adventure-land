@@ -6831,13 +6831,13 @@ a.social-media i {
 	left: 0;
 }
 
-.google-map-01__list-fax {
+.google-map-01__list-email {
 	margin-bottom: 85px;
 }
 
 .google-map-01__list-fax::before {
 	font-family: 'Flaticon';
-	content: '\f124';
+	content: '\f100';
 	font-size: 50px;
 	color: #fff;
 	display: inline-block;
