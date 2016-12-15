@@ -6261,7 +6261,7 @@ li.md-hidden {
 
 .prices-01 .prices-01__button {
 	font: bold 12px/14px 'Open Sans', 'Arial', sans-serif;
-	color: #262626;
+	color: #fff;
 	text-transform: uppercase;
 	display: inline-block;
 	float: none;
@@ -6272,7 +6272,7 @@ li.md-hidden {
 }
 
 .prices-01 .prices-01__button:hover {
-	background: #262626;
+	background: #28377a;
 	color: #fff;
 }
 
@@ -6316,17 +6316,32 @@ li.md-hidden {
 }
 
 .prices-01__title--01::before {
-	content: 'Standard';
+	content: 'PLAY';
 	margin-top: -28px;
 }
 
 .prices-01__title--02::before {
-	content: 'ADVANCED';
+	content: 'ARENA';
 	margin-top: -28px;
 }
 
 .prices-01__title--03::before {
-	content: 'Professional';
+	content: 'COURSE';
+	margin-top: -28px;
+	margin-left: -10px;
+}
+.prices-01__title--04::before {
+	content: 'PARED';
+	margin-top: -28px;
+}
+
+.prices-01__title--05::before {
+	content: 'FÚTBOL';
+	margin-top: -28px;
+}
+
+.prices-01__title--06::before {
+	content: 'igolf';
 	margin-top: -28px;
 	margin-left: -10px;
 }
@@ -6681,13 +6696,13 @@ li.md-hidden {
 }
 
 .contact-form-01 .contact-form-message .contact-form-01__button:hover {
-	background: #282828;
+	background: #28377a;
 	color: #fff;
 	-webkit-transition: 0.5s all;
 	transition: 0.5s all;
 }
 .contact-form-02 .contact-form-message .contact-form-02__button:hover {
-	background: #282828;
+	background: #28377a;
 	color: #fff;
 	-webkit-transition: 0.5s all;
 	transition: 0.5s all;
