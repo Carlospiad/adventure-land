@@ -4202,6 +4202,7 @@ section .cs .theme_button:hover {
 @media (max-width: 1280px) {
 	.home-page-03.topline-01 .logo_image {
 		width: 73px;
+    margin-left: -10px;
 	}
 }
 
@@ -16170,7 +16171,7 @@ a.side-menu-open {
     cursor: pointer;
     float: right;
     margin-top: 32px;
-    margin-left: 44px;
+    margin-left: 20px;
     color: #fff;
 }
 
@@ -16532,6 +16533,43 @@ h4 {
 }
 
 @media (max-width: 767px) {
+	.page_mainslider .page_mainslider__btn {
+    display: none;
+	}
+  .page_mainslider .flex-control-nav {
+		bottom: 10px;
+	}
+  .page_mainslider .page_mainslider__title-2 {
+		font: 300 60px/60px 'Open Sans', 'Arial', sans-serif;
+	}
+
+  .page_mainslider__text {
+		display: none;
+	}
+  .page_mainslider .page_mainslider__title {
+		font: 600 75px/50px 'Adventure', 'Arial', sans-serif;
+    margin-left: 25px;
+    margin-top: 5px;
+	}
+  .page_mainslider .page_mainslider__title_down {
+  	font: 600 75px/75px 'Adventure', 'Arial', sans-serif;
+  	color: #f26223;
+  	margin-left: 65px;
+    margin-top: -5px;
+    position: sticky;
+  }
+  .page_mainslider-block {
+    margin-top: 20px;
+  }
+  .page_mainslider__subtitle {
+  	font: 200 14px/14px 'Open Sans', 'Arial', sans-serif;
+  	margin-bottom: 8px;
+    margin-top: 0;
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 426px) {
   .page_mainslider .page_mainslider__title {
 		font: 500 50px/65px 'Adventure', 'Arial', sans-serif;
     margin-left: 30px;
@@ -16550,5 +16588,11 @@ h4 {
   	color: #f26223;
   	margin-left: 70px;
     margin-top: -30px;
+  }
+}
+
+@media (min-width:992px) {
+  .container{
+    width: 990px;
   }
 }
