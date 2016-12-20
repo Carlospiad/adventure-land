@@ -7501,8 +7501,8 @@ ul.pagination.pagination-type-1 li:last-child a:hover::before, ul.pagination.pag
 }
 
 .banner-01 .banner-01__title {
-	font: 22px/24px 'Open Sans', 'Arial', sans-serif;
-	color: #262626;
+	font: 24px/24px 'Adventure', 'Arial', sans-serif;
+	color: #f26233;
 	margin: 0 0 16px;
 }
 
@@ -16588,11 +16588,5 @@ h4 {
   	color: #f26223;
   	margin-left: 70px;
     margin-top: -30px;
-  }
-}
-
-@media (min-width:992px) {
-  .container{
-    width: 990px;
   }
 }
