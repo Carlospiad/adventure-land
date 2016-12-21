@@ -16,25 +16,25 @@
 										<li class="main-nav main-nav-right">
 											<ul>
 
-													<li class="active">
+													<li class="{% if page.name == "index.html" %}active{% endif %}">
 														<a href="{% link index.html %}">Inicio</a>
 													</li>
-													<li>
+													<li class="{% if page.name == "planea.html" %}active{% endif %}">
 														<a href="{% link planea.html %}">Planea tu Evento</a>
 													</li>
-													<li>
+													<li class="{% if page.name == "index.html" %}active{% endif %}">
 														<a href="{% link atracciones.html %}">Atracciones</a>
 													</li>
-													<li>
+													<li class="{% if page.name == "atracciones.html" %}active{% endif %}">
 														<a href="{% link cafe.html %}">Café</a>
 													</li>
-													<li>
+													<li class="{% if page.name == "precios.html" %}active{% endif %}">
 														<a href="{% link precios.html %}">Precios</a>
 													</li>
-													<li>
+													<li class="{% if page.name == "faqs.html" %}active{% endif %}">
 														<a href="{% link faqs.html %}">Faqs</a>
 													</li>
-													<li>
+													<li class="{% if page.name == "contacto.html" %}active{% endif %}">
 														<a href="{% link contacto.html %}">Contacto</a>
 													</li>
 											</ul>

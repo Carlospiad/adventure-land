@@ -16451,7 +16451,9 @@ h4 {
   margin-top: -5px;
   margin-bottom: 10px;
 }
-
+li.main-nav.main-nav-right.md-hidden {
+    margin-right: 20px;
+}
 /*slider responsive text*/
 
 
