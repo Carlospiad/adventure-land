@@ -15996,6 +15996,29 @@ isotope portfolio and gallery pos
 .gallery-columns-9 .gallery-caption {
 	display: none;
 }
+ul.horarios li {
+    font-size: 13px;
+}
+form.sidebar-form input {
+    background-color: #656565;
+    font-size: 12px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+form.sidebar-form select {
+    background-color: #656565;
+    font-size: 12px;
+    color: #ababab;
+    padding-left: 15px;
+    width: 100%;
+}
+a.btn {
+    padding: 5px 15px;
+    background: #ff6108;
+    color: #fff;
+    float: right;
+    margin-top: 10px;
+}
 
 @media (max-width: 600px) {
 	.gallery-columns-4 .gallery-item,

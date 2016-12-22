@@ -11,31 +11,24 @@
         </div>
       </div>
       <div class="side-content">
-        <table class="table table-bordered">
-          <tbody>
-            <tr>
-              <td>Lunes a Jueves</td>
-              <td>3:00 pm a 7:30 pm</td>
-            </tr>
-            <tr>
-                <td>Viernes</td>
-                <td>3:00 pm a 9:30 pm</td>
-            </tr>
-            <tr>
-                <td>Sábados</td>
-                <td>10:30 am a  9:30 pm</td>
-            </tr>
-            <tr>
-                <td>Domingos</td>
-                <td>11:00 am a 7:30 pm</td>
-            </tr>
-           </tbody>
-          </table>
-
-        <ul >
-          <li>Las canchas de Futbol estan abiertas las 24 horas del dia.</li>
-        </ul>
-
+          <h3>Adventure Land</h3>
+          <ul class="horarios">
+            <li>
+              <p><strong>Lunes a Jueves</strong> 3:00 pm a 7:30 pm</p>
+            </li>
+            <li>
+              <p><strong>Viernes</strong> 3:00 pm a 9:30 pm</p>
+            </li>
+            <li>
+              <p><strong>Sábados</strong> 11:00 am a 7:30 pm</p>
+            </li>
+          </ul>
+          <h3>Futbol Town</h3>
+          <ul class="horarios">
+            <li>
+              <p><strong>Todos los días</strong> 24H</p>
+            </li>
+          </ul>
       </div>
     </div>
     <div class="side-widget">
@@ -45,11 +38,24 @@
         </div>
         <div class="side-desc">
           <h3>Reservas o información:</h3>
-          <p>Celebre su evento en <strong>Adventure Land</strong>
+
+
         </div>
       </div>
       <div class="side-content">
-          <a href="{% link planea.html %}" class="button-adventure2">Planea Tu Evento</a>
+        <small>Rellene los siguinetes datos</small>
+        <form class="sidebar-form">
+          <input type="text" placeholder="Su nombre">
+          <input type="email" placeholder="Su email">
+          <input type="text" placeholder="Su teléfono">
+          <select>
+            <option value="">Seleccione servicios</option>
+            <option value="eventos">Eventos</option>
+            <option value="cumpleanos">Cumpleaños</option>
+            <option value="empresa">Fiesta empresa</option>
+          </select>
+          <a href="#" class="btn">Enviar solicitud</a>
+        </form>
       </div>
     </div>
 
