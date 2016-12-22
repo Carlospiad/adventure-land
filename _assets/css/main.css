@@ -4727,9 +4727,9 @@ ul.slides {
 }
 
 .page_mainslider-col {
-	display: table-cell;
-	vertical-align: middle;
+    margin-top: 450px;
 }
+
 
 .page_mainslider-block {
 	width: 100%;
@@ -16488,139 +16488,211 @@ li.main-nav.main-nav-right.md-hidden {
 }
 /*slider responsive text*/
 
+@media (max-width: 1600px) {
+  .page_mainslider-col {
+      margin-top: 400px;
+  }
+}
+@media (max-width: 1470px) {
+  .page_mainslider-col {
+      margin-top: 350px;
+  }
+  .page_mainslider .page_mainslider__title {
+      font-size: 150px;;
+      margin-left: 0px;
+  }
+  .page_mainslider .page_mainslider__title_down {
+    margin-left: 280px;
+    font-size: 100px;
+    margin-top: -40px;
 
-@media (max-width: 1199px) {
-	.page_mainslider .page_mainslider__title {
-		font: 600 150px/65px 'Adventure', 'Arial', sans-serif;
-		margin-bottom: -5px;
-    margin-top: 25;
-	}
-  .page_mainslider__text {
-  	font: 13px/30px 'Open Sans', 'Arial', sans-serif;
-  	color: #fff;
-    margin-top: 25px;
-  	margin-left: -2px;
-  	margin-bottom: 0px;
+}
+.page_mainslider__text span {
+    max-width: 500px;
+    margin-left: 0px;
+    margin-top: 40px;
+    font-size: 16px;
+}
+.page_mainslider__subtitle {
+    margin-top: -140px;
+    margin-left: 30px;
+    font-family: 'Open Sans';
+    font-size: 30px;
+
+}
+
+.page_mainslider .page_mainslider__btn {
+    margin-left: 90px;
+    font-size: 18px;
+    margin-top: 130px;
+
+}
+}
+@media (max-width: 1300px) {
+.page_mainslider-col {
+    margin-top: 320px;
     margin-left: 100px;
-    line-height: normal;
-    max-width: 400px;
+}
+}
+@media (max-width: 1199px) {
+
+  .sf-menu .main-nav li a {
+    font-size: 13px;
+}
+.page_mainslider-col {
+    margin-top: 280px;
+    margin-left: 100px;
+}
+.page_mainslider__text span {
+    max-width: 500px;
+    margin-left: 0px;
+    margin-top: 60px;
+    font-size: 14px;
+}
+.page_mainslider .page_mainslider__btn {
+    margin-left: 90px;
+    font-size: 14px;
+    margin-top: 140px;
+}
+}
+@media (max-width: 1100px){
+  .page_mainslider .page_mainslider__title {
+      font-size: 100px;
+      margin-left: 0px;
   }
-  .page_mainslider .page_mainslider__title-2 {
-		font: 300 80px/80px 'Open Sans', 'Arial', sans-serif;
-		margin-top: 0;
-		margin-bottom: 10px;
-	}
-  .page_mainslider__text span {
-		max-width: 475px;
-  }
-  .page_mainslider-block {
-    margin-top: 120px;
-  }
-  .page_mainslider .page_mainslider__btn {
-  	font: bold 12px/14px 'Open Sans', 'Arial', sans-serif;
-  	color: #fff;
-  	background: #f26223;
-  	text-transform: uppercase;
-  	padding: 5px 12px;
-  	display: inline-block;
-  	float: none;
-  	vertical-align: middle;
-    margin-left: 230px;
-    margin-bottom: 50px;
-  }
+  .page_mainslider .page_mainslider__title_down {
+    margin-left: 190px;
+    font-size: 70px;
+    margin-top: -60px;
+}
+.page_mainslider__subtitle {
+    margin-top: -115px;
+
+    font-size: 20px;
+}
+.page_mainslider__text span {
+    max-width: 350px;
+    margin-left: 0px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.page_mainslider .page_mainslider__btn {
+    margin-left: 60px;
+    font-size: 12px;
+    margin-top: 115px;
+    padding: 5px 10px;
+    line-height: 18px;
+}
+.page_mainslider-col {
+    margin-top: 260px;
+}
+
+.page_mainslider-col {
+    margin-top: 250px;
+    margin-left: 100px;
+
+}
 }
 
 @media (max-width: 991px) {
-	.page_mainslider .page_mainslider__btn {
-    display: none;
-	}
-  .page_mainslider .flex-control-nav {
-		bottom: 10px;
-	}
-  .page_mainslider .page_mainslider__title-2 {
-		font: 300 60px/60px 'Open Sans', 'Arial', sans-serif;
-	}
+  .page_mainslider__text span {
+      display: none;
+  }
+  .page_mainslider .page_mainslider__btn {
+    margin-left: 60px;
+    font-size: 12px;
+    margin-top: 30px;
+    padding: 5px 10px;
+    line-height: 18px;
+}
+.page_mainslider-col {
+    margin-top: 270px;
 
-  .page_mainslider__text {
-		display: none;
-	}
-  .page_mainslider .page_mainslider__title {
-		font: 600 90px/50px 'Adventure', 'Arial', sans-serif;
-	}
-  .page_mainslider .page_mainslider__title_down {
-  	font: 600 120px/75px 'Adventure', 'Arial', sans-serif;
-  	color: #f26223;
-  	margin-top: -50;
-  	margin-left: 200px;
-  	margin-bottom: -5px;
-    position: sticky;
-  }
-  .page_mainslider-block {
-    margin-top: 50px;
-  }
-  .page_mainslider__subtitle {
-  	font: 200 16px/25px 'Open Sans', 'Arial', sans-serif;
-  	margin-bottom: 8px;
-    margin-top: 0;
-    margin-left: 100px;
-  }
+}
+}
+@media (max-width: 830px) {
+  .page_mainslider .page_mainslider__btn {
+    margin-left: 60px;
+    font-size: 12px;
+    margin-top: 30px;
+    padding: 5px 10px;
+    line-height: 18px;
+}
+.page_mainslider-col {
+    margin-top: 230px;
+    margin-left: 50px;
+
+}
 }
 
 @media (max-width: 767px) {
-	.page_mainslider .page_mainslider__btn {
-    display: none;
-	}
-  .page_mainslider .flex-control-nav {
-		bottom: 10px;
-	}
-  .page_mainslider .page_mainslider__title-2 {
-		font: 300 60px/60px 'Open Sans', 'Arial', sans-serif;
-	}
+  .page_mainslider-col {
+      margin-top: 180px;
+      margin-left: 00px;
 
-  .page_mainslider__text {
-		display: none;
-	}
+  }
+}
+@media (max-width: 630px) {
+  .page_mainslider-col {
+      margin-top: 180px;
+      margin-left: 00px;
+
+  }
   .page_mainslider .page_mainslider__title {
-		font: 600 75px/50px 'Adventure', 'Arial', sans-serif;
-    margin-left: 25px;
-    margin-top: 5px;
-	}
-  .page_mainslider .page_mainslider__title_down {
-  	font: 600 75px/75px 'Adventure', 'Arial', sans-serif;
-  	color: #f26223;
-  	margin-left: 65px;
-    margin-top: -5px;
-    position: sticky;
+    font-size: 70px;
+    margin-left: 0px;
+}
+.page_mainslider .page_mainslider__title_down {
+    margin-left: 130px;
+    font-size: 45px;
+    margin-top: -70px;
+}
+.page_mainslider__subtitle {
+    margin-top: -100px;
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+.page_mainslider .page_mainslider__btn {
+    margin-left: 20px;
+    font-size: 10px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    line-height: 18px;
+}
+}
+@media (max-width: 580px) {
+  .page_mainslider-col {
+      margin-top: 150px;
+      margin-left: 00px;
+
   }
-  .page_mainslider-block {
-    margin-top: 20px;
+
+}
+@media (max-width: 500px) {
+  .page_mainslider .page_mainslider__btn {
+      display: none;
   }
-  .page_mainslider__subtitle {
-  	font: 200 14px/14px 'Open Sans', 'Arial', sans-serif;
-  	margin-bottom: 8px;
-    margin-top: 0;
-    margin-left: 25px;
-  }
+
 }
 
 @media (max-width: 426px) {
+  .page_mainslider-col {
+      margin-top: 130px;
+      margin-left: 00px;
+
+  }
+}
+@media (max-width: 350px) {
   .page_mainslider .page_mainslider__title {
-		font: 500 50px/65px 'Adventure', 'Arial', sans-serif;
-    margin-left: 30px;
-	}
-  .page_mainslider .flex-control-nav {
-		bottom: -20px;
-	}
-  .page_mainslider__subtitle {
-    display:  none;
-	}
-  .page_mainslider-block {
-    margin-top: 10px;
-  }
-  .page_mainslider .page_mainslider__title_down {
-  	font: 600 60px/75px 'Adventure', 'Arial', sans-serif;
-  	color: #f26223;
-  	margin-left: 70px;
-    margin-top: -30px;
-  }
+    font-size: 50px;
+    margin-left: 0px;
+}
+.page_mainslider .page_mainslider__title_down {
+    margin-left: 90px;
+    font-size: 40px;
+    margin-top: -80px;
+}
+.page_mainslider__subtitle {
+    margin-left: 10px;
+}
 }
