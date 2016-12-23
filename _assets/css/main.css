@@ -16012,6 +16012,20 @@ form.sidebar-form select {
     padding-left: 15px;
     width: 100%;
 }
+.parallax-title.bg-white h2 {
+    color: #ff6108;
+    font-size: 40px;
+    letter-spacing: -1px;
+}
+.parallax-title.bg-white .lead {
+    color: #656565;
+    font-size: 18px;
+    margin-left: 5px;
+}
+.parallax-title.bg-white:after {
+    width: 90px;
+    background-color: #ff6108;
+}
 a.btn {
     padding: 5px 15px;
     background: #ff6108;
