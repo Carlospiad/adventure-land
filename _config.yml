@@ -53,3 +53,49 @@ exclude:
   - .asset-cache/
 livereload: true     # You no longer need to include --livereload
 reload_port: 5678 # If you don't want to use the default port
+
+#Adventure Land - Arrays
+attractions: [
+{
+  "name": "Play<br>Ground",
+  "image": "atracciones_playground.jpg",
+  "age": "0a",
+  "description": "Desde los 6 meses en adelante pueden los niños disfrutar.",
+  "link": "#"
+},
+{
+  "name": "Arena<br>Laser",
+  "image": "atracciones_laser.jpg",
+  "age": "10a",
+  "description": "Declara la guerra láser en nuestra arena de juegos láser.",
+  "link": "atracciones/arena_laser.html"
+},
+{
+  "name": "Course<br>Rope",
+  "image": "atracciones_playground.jpg",
+  "age": "3a 10a",
+  "description": "Pasea por las alturas y desafía tus miedos.",
+  "link": "atracciones/arena_laser.html"
+},
+{
+  "name": "Pared de<br>Escalar",
+  "image": "atracciones_playground.jpg",
+  "age": "3a 10a",
+  "description": "Para que los niños intenten llegar a lo más alto.",
+  "link": "atracciones/arena_laser.html"
+},
+{
+  "name": "Futbol<br>Town",
+  "image": "atracciones_futbol.jpg",
+  "age": "10a adultos",
+  "description": "Juega tus partidos de fútbol en las mejores canchas de Panamá.",
+  "link": "atracciones/arena_laser.html"
+},
+{
+  "name": "igolf<br>",
+  "image": "atracciones_igolf.jpg",
+  "age": "adultos",
+  "description": "Prueba nuestro simulador de golf virtual.",
+  "link": "atracciones/arena_laser.html"
+}
+]
