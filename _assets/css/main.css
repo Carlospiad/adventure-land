@@ -16523,6 +16523,22 @@ h4 {
 li.main-nav.main-nav-right.md-hidden {
     margin-right: 20px;
 }
+.classes-single-wrap .classes-single__title {
+    color: #273679;
+    margin-bottom: 24px;
+    font-size: 40px;
+}
+.classes-single-wrap:after{
+  content: '';
+height: 3px;
+width: 50px;
+background-color: #fff;
+/* position: absolute; */
+margin-top: 10px;
+margin-bottom: 10px;
+display: -webkit-inline-box;
+
+}
 /*slider responsive text*/
 
 @media (max-width: 1600px) {
