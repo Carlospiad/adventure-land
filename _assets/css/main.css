@@ -4596,6 +4596,17 @@ ul.slides {
 li.main-nav.main-nav-right {
     margin-right: 20px;
 }
+.menu-icon i {
+    background-color: #f26223;
+    color: #fff;
+    width: 120px;
+    margin: 20px;
+    height: 120px;
+    font-size: 60px;
+    text-align: center;
+    line-height: 120px;
+    border-radius: 50%;
+}
 @media (max-width: 600px) {
 	.page_mainslider .flex-direction-nav .flex-prev {
 		top: 22%;
@@ -16528,7 +16539,7 @@ li.main-nav.main-nav-right.md-hidden {
 }
 .classes-single-wrap .classes-single__title {
     color: #273679;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     font-size: 40px;
 }
 .classes-single-wrap:after{
@@ -16541,6 +16552,51 @@ margin-top: 10px;
 margin-bottom: 10px;
 display: -webkit-inline-box;
 
+}
+.classes-single-wrap.content .classes-single__title  {
+    color: #273679;
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+.classes-single-wrap.content{
+    padding: 0 0px 0px;
+}
+.classes-single-wrap.content:after{
+
+background-color: #f26223;
+
+}
+.padding_bottom_30 {
+    padding-bottom: 30px;
+}
+.menu-icon {
+    margin-bottom: 15px;
+}
+.menu-icon img {
+    width: 70%;
+}
+.menu-item {
+    margin: 5px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+.classes-single-content.section_padding_bottom_30 {
+    top: 0px;
+}
+.col-md-4.menu-item.text-center.no-padding {
+    width: 32%;
+}
+.menu-desc p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 15px;
+}
+.menu-desc .price-menu {
+    font-weight: 900;
+    font-style: italic;
+    color: #f26223;
+    font-size: 18px;
 }
 /*slider responsive text*/
 
