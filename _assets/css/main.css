@@ -4588,10 +4588,13 @@ section .cs .theme_button:hover {
     background: #262626;
     text-align: center;
     left: -100px;
-    top: 40%;
+    top: 50%;
 }
 ul.slides {
     margin-top: -50px;
+}
+li.main-nav.main-nav-right {
+    margin-right: 20px;
 }
 @media (max-width: 600px) {
 	.page_mainslider .flex-direction-nav .flex-prev {
@@ -4633,7 +4636,7 @@ ul.slides {
     background: #262626;
     text-align: center;
     right: -100px;
-    top: 40%;
+    top: 50%;
 }
 
 @media (max-width: 600px) {

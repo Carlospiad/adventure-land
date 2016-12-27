@@ -51,8 +51,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .asset-cache/
-#livereload: true     # You no longer need to include --livereload
-#reload_port: 5678 # If you don't want to use the default port
+livereload: true     # You no longer need to include --livereload
+reload_port: 5678 # If you don't want to use the default port
 
 #Adventure Land - Arrays
 attractions: [
