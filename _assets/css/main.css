@@ -6249,14 +6249,19 @@ li.md-hidden {
 	border: 5px solid #f26223;
 	margin-bottom: 63px;
 }
-
 .prices-01 .prices-01__title {
-	font: 500 22px/24px 'Open Sans', 'Arial', sans-serif;
-	text-transform: uppercase;
-	color: #262626;
-	margin: 0;
-	padding: 40px 15px 46px;
-	position: relative;
+    /* font: 500 22px/24px 'Open Sans', 'Arial', sans-serif; */
+    text-transform: uppercase;
+    color: #28377a;
+    margin: 0;
+    padding: 40px 15px 46px;
+    position: relative;
+    font-family: 'Open Sans';
+    letter-spacing: -1px;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: italic;
+    padding-left: 75px;
 }
 
 .prices-01 .prices-01__title::before {
@@ -16044,10 +16049,15 @@ a.btn {
     padding: 5px 15px;
     background: #ff6108;
     color: #fff;
-    float: right;
+    float: left;
     margin-top: 10px;
 }
-
+.prices-01.text-center img {
+    width: 70px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+}
 @media (max-width: 600px) {
 	.gallery-columns-4 .gallery-item,
   .gallery-columns-5 .gallery-item,
