@@ -1706,6 +1706,54 @@ ol.list3 li:after {
 	left: 0;
 }
 
+.listfutbol {
+	padding-bottom: 30px;
+	padding-top: 0;
+	margin-bottom: -0;
+	padding-left: 10px;
+}
+
+.listfutbol li {
+	font: 16px/30px 'Open Sans', 'Arial', sans-serif;
+	color: #5f5f5f;
+	list-style: none;
+	padding-left: 30px;
+	position: relative;
+}
+
+.listfutbol li::before {
+	font-family: 'FontAwesome';
+	content: '\f1e3';
+	color: #f26223;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.listgolf {
+	padding-bottom: 30px;
+	padding-top: 0;
+	margin-bottom: -0;
+	padding-left: 10px;
+}
+
+.listgolf li {
+	font: 16px/30px 'Open Sans', 'Arial', sans-serif;
+	color: #5f5f5f;
+	list-style: none;
+	padding-left: 30px;
+	position: relative;
+}
+
+.listgolf li::before {
+	font-family: 'FontAwesome';
+	content: '\f024';
+	color: #f26223;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
 table {
 	width: 100%;
 	max-width: 100%;
@@ -7549,6 +7597,7 @@ ul.pagination.pagination-type-1 li:last-child a:hover::before, ul.pagination.pag
 	background: #fff;
 	padding: 0 0 30px;
 	margin-bottom: 30px;
+  min-height: 420px;
 }
 
 .banner-01 .banner-01__title {
