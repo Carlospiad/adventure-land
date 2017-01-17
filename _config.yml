@@ -25,7 +25,7 @@ ig: https://www.instagram.com/adventurelandpty
 pi: https://es.pinterest.com/
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-host: "192.168.1.10"
+#host: "192.168.1.10"
 port: 8000
 livereload: true     # You no longer need to include --livereload
 # Asset configuration
@@ -89,13 +89,13 @@ attractions: [
   "image": "atracciones_futbol.jpg",
   "age": "10a adultos",
   "description": "Juega tus partidos de fútbol en las mejores canchas de Panamá.",
-  "link": "atracciones/arena_laser.html"
+  "link": "atracciones/futbol_town.html"
 },
 {
   "name": "igolf<br>",
   "image": "atracciones_igolf.jpg",
   "age": "adultos",
   "description": "Prueba nuestro simulador de golf virtual.",
-  "link": "atracciones/arena_laser.html"
+  "link": "atracciones/igolf.html"
 }
 ]
