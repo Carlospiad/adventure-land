@@ -61,7 +61,7 @@ attractions: [
   "image": "atracciones_playground.jpg",
   "age": "0a",
   "description": "Desde los 6 meses en adelante pueden los niños disfrutar.",
-  "link": "atracciones/arena_laser.html"
+  "link": "atracciones/playground.html"
 },
 {
   "name": "Láser<br>Arena",
@@ -75,14 +75,14 @@ attractions: [
   "image": "atracciones_playground.jpg",
   "age": "3a 10a",
   "description": "Pasea por las alturas y desafía tus miedos.",
-  "link": "atracciones/arena_laser.html"
+  "link": "atracciones/course_rope.html"
 },
 {
   "name": "Pared de<br>Escalar",
   "image": "atracciones_playground.jpg",
   "age": "3a 10a",
   "description": "Para que los niños intenten llegar a lo más alto.",
-  "link": "atracciones/arena_laser.html"
+  "link": "atracciones/pared_escalar.html"
 },
 {
   "name": "Futbol<br>Town",
