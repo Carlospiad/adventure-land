@@ -976,6 +976,11 @@ ul.contact-info li {
 	border-bottom: 1px solid #565656;
 	margin-top: 15px;
 }
+ul.contact-info2 li {
+	list-style-type: none;
+	margin-left: -25px;
+	margin-top: 15px;
+}
 .contact-icon {
     color: #f26223;
     font-size: 30px;
@@ -986,11 +991,25 @@ ul.contact-info li {
     color: #fff;
     padding-left: 40px;
     margin-bottom: 12px;
+    font-size: 13px;
 }
 .contact-desc a {
     color: #fff;
 }
 .contact-desc a:hover {
+    color: #f26223;
+}
+.contact-desc2 {
+    color: #fff;
+    padding-left: 40px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    line-height: normal;
+}
+.contact-desc2 a {
+    color: #fff;
+}
+.contact-desc2 a:hover {
     color: #f26223;
 }
 .contact-icon.social {
