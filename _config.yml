@@ -27,7 +27,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 host: "192.168.1.10"
 port: 8000
-livereload: true     # You no longer need to include --livereload
 # Asset configuration
 assets:
   cache: .asset-cache
@@ -51,8 +50,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .asset-cache/
-livereload: true     # You no longer need to include --livereload
-reload_port: 5678 # If you don't want to use the default port
+# livereload: true     # You no longer need to include --livereload
+# reload_port: 5678 # If you don't want to use the default port
 
 #Adventure Land - Arrays
 attractions: [
@@ -97,5 +96,63 @@ attractions: [
   "age": "adultos",
   "description": "Prueba nuestro simulador de golf virtual.",
   "link": "/atracciones/igolf/"
+}
+]
+gallery: [
+{
+  "name": "Fútbol Town",
+  "image": /assets/images/gallery/futbol-town-2.jpg",
+  "attraction": "futbol",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "link": "atracciones/futbol-town.html"
+},
+{
+  "name": "Course Rope",
+  "image": "/assets/images/gallery/course-rope-2.jpg",
+  "attraction": "course",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "link": "atracciones/course_rope.html"
+},
+{
+  "name": "iGolf",
+  "image": "/assets/images/gallery/igolf-2.jpg",
+  "attraction": "igolf",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "link": "atracciones/igolf.html"
+},
+{
+  "name": "Playground",
+  "image": "/assets/images/gallery/playground-1.jpg",
+  "attraction": "play",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "link": "atracciones/playground.html"
+},
+{
+  "name": "Pared de escalar",
+  "image": "/assets/images/gallery/pared-escalar-2.jpg",
+  "attraction": "pared",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "link": "atracciones/pared_escalar.html"
+},
+{
+  "name": "Playground",
+  "image": "/assets/images/gallery/playground-2.jpg",
+  "attraction": "play",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "link": "atracciones/playground.html"
+},
+{
+  "name": "Fútbol Town",
+  "image": "/assets/images/gallery/futbol-town-4.jpg",
+  "attraction": "futbol",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "link": "atracciones/futbol-town.html"
+},
+{
+  "name": "Láser Arena",
+  "image": "/assets/images/gallery/laser-arena-1.jpg",
+  "attraction": "laser",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "link": "atracciones/arena_laser.html"
 }
 ]
