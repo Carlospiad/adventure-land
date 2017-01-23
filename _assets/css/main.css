@@ -16724,6 +16724,9 @@ background-color: #f26223;
     color: #f26223;
     font-size: 18px;
 }
+.galeria .isotope-item{
+  padding: 2px;
+}
 /*slider responsive text*/
 
 @media (max-width: 1600px) {
