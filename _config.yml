@@ -25,7 +25,7 @@ ig: https://www.instagram.com/adventurelandpty
 pi: https://es.pinterest.com/
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-host: "192.168.1.10"
+#host: "192.168.1.10"
 port: 8000
 # Asset configuration
 assets:
@@ -56,7 +56,7 @@ exclude:
 #Adventure Land - Arrays
 attractions: [
 {
-  "name": "Play<br>Ground",
+  "name": "PlayGround",
   "image": "atracciones_playground.jpg",
   "age": "0a",
   "description": "Desde los 6 meses en adelante pueden los niños disfrutar.",
@@ -70,7 +70,7 @@ attractions: [
   "link": "/atracciones/laser_arena/"
 },
 {
-  "name": "Course<br>Rope",
+  "name": "Rope<br>Course",
   "image": "atracciones_playground.jpg",
   "age": "3a 10a",
   "description": "Pasea por las alturas y desafía tus miedos.",
@@ -107,7 +107,7 @@ gallery: [
   "link": "atracciones/futbol-town.html"
 },
 {
-  "name": "Course Rope",
+  "name": "Rope Course",
   "image": "/assets/images/gallery/course-rope-2.jpg",
   "attraction": "course",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
