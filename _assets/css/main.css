@@ -6448,9 +6448,20 @@ li.md-hidden {
 	vertical-align: bottom;
 }
 
+.prices-01__price .prices-01__price-04 {
+	font: 400 16px/18px 'Open Sans', 'Arial', sans-serif;
+	position: relative;
+	top: -14px;
+	left: -1px;
+	display: inline-block;
+	float: none;
+	vertical-align: bottom;
+}
+
 .prices-01__price-wrapp {
 	display: inline-block;
 	font-size: 0;
+  min-height: 95px;
 }
 
 .prices-01__title--01::before {
