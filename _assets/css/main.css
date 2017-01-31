@@ -17059,9 +17059,14 @@ background-color: #f26223;
   margin-right: auto;
   color: #fff;
   line-height: 26px;
-  padding: 0px 0;
+  padding: 9px 0;
 }
 
 .promobox .promoicon .inner-box {
   vertical-align: bottom;
+}
+
+.validad {
+  text-align: right;
+  margin-top: -40px;
 }
