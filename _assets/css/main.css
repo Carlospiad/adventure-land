@@ -16948,3 +16948,120 @@ background-color: #f26223;
     margin-left: 10px;
 }
 }
+
+
+.promobox {
+  background: #f26223;
+  margin-bottom: 33px;
+  padding: 15px;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.promobox .prices-01__price-wrapp {
+	display: inline-block;
+	font-size: 0;
+  min-height: 95px;
+}
+
+.promobox .prices-01__price-01 {
+	font: 900 34px/34px 'Open Sans', 'Arial', sans-serif;
+	position: relative;
+	top: 2px;
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+
+.promobox .prices-01__price-02 {
+	font: 900 60px/62px 'Open Sans', 'Arial', sans-serif;
+	display: inline-block;
+	float: none;
+	vertical-align: middle;
+}
+
+.promobox .prices-01__price-03 {
+	font: 900 26px/28px 'Open Sans', 'Arial', sans-serif;
+	position: relative;
+	top: -4px;
+	left: -1px;
+	display: inline-block;
+	float: none;
+	vertical-align: bottom;
+}
+
+.promobox .prices-01__price-04 {
+	font: 400 11px/12px 'Open Sans', 'Arial', sans-serif;
+	position: relative;
+	top: -14px;
+	left: -1px;
+	display: inline-block;
+	float: none;
+	vertical-align: bottom;
+}
+
+.promobox .titlepromo1 {
+	font: 900 30px/28px 'Open Sans', 'Arial', sans-serif;
+	position: relative;
+	top: -4px;
+	left: -1px;
+	display: inline-block;
+	float: none;
+	vertical-align: bottom;
+}
+.promobox .titlepromo2 {
+	font: 300 30px/28px 'Open Sans', 'Arial', sans-serif;
+	position: relative;
+	top: -4px;
+	left: -1px;
+	display: inline-block;
+	float: none;
+	vertical-align: bottom;
+}
+
+.promobox .promoicon {
+  background: #28377a;
+  width: 96px;
+  height: 96px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  font-size: 13px;
+  color: #fff;
+  line-height: 26px;
+  padding: 26px 0;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.promobox .promotexto {
+  height: 96px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  line-height: 26px;
+  padding: 26px 0;
+  margin-left: -30px;
+}
+
+.promobox .promotexto2 {
+  height: 96px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  line-height: 26px;
+  padding: 16px 0;
+}
+
+.promobox .promotexto3 {
+  height: 96px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  line-height: 26px;
+  padding: 0px 0;
+}
+
+.promobox .promoicon .inner-box {
+  vertical-align: bottom;
+}
