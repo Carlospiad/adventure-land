@@ -17103,6 +17103,14 @@ background-color: #f26223;
 
 
 @media (max-width: 767px) {
+  .promobox {
+    background: #f26223;
+    margin-bottom: 33px;
+    margin-top: 83px;
+    padding: 15px;
+    color: #fff;
+    vertical-align: middle;
+  }
   .promobox .promotexto3 {
     height: 96px;
     margin-left: auto;
@@ -17131,9 +17139,7 @@ background-color: #f26223;
     height: 76px;
     line-height: 26px;
     padding: 10px 0;
-    text-align: initial;
-    margin-left: -9px;
-    margin-right: 9px;
+    text-align: center;;
   }
   .promobox .titlepromo1 {
   	font: 900 50px/28px 'Open Sans', 'Arial', sans-serif;
