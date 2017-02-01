@@ -17020,18 +17020,8 @@ background-color: #f26223;
 }
 
 .promobox .promoicon {
-  background: #28377a;
-  width: 96px;
   height: 96px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  font-size: 13px;
-  color: #fff;
   line-height: 26px;
-  padding: 26px 0;
-  transition: all 0.3s ease;
-  text-align: center;
 }
 
 .promobox .promotexto {
@@ -17069,4 +17059,107 @@ background-color: #f26223;
 .validad {
   text-align: right;
   margin-top: -40px;
+}
+
+
+
+
+
+@media (max-width: 1199px) {
+  .promobox .promotexto3 {
+    height: 116px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    line-height: 26px;
+    padding: 9px 0;
+  }
+  .promobox .prices-01__price-wrapp {
+  	display: inline-block;
+  	font-size: 0;
+    min-height: 95px;
+    text-align: center;
+  }
+  .promobox .promotexto {
+    height: 96px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    line-height: 26px;
+    padding: 33px 0;
+    margin-left: -30px;
+  }
+  .promobox .promoicon {
+    height: 116px;
+    line-height: 26px;
+    padding: 10px 0;
+    text-align: center;
+    margin-left: -9px;
+    margin-right: 9px;
+  }
+
+}
+
+
+
+@media (max-width: 767px) {
+  .promobox .promotexto3 {
+    height: 96px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    line-height: 26px;
+    padding: 19px 0;
+    text-align: center;
+  }
+  .promobox .prices-01__price-wrapp {
+    display: inline-block;
+    font-size: 0;
+    min-height: 95px;
+    text-align: center;
+  }
+  .promobox .promotexto {
+    height: 96px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    line-height: 42px;
+    padding: 33px 0;
+    text-align: center;
+  }
+  .promobox .promoicon {
+    height: 76px;
+    line-height: 26px;
+    padding: 10px 0;
+    text-align: initial;
+    margin-left: -9px;
+    margin-right: 9px;
+  }
+  .promobox .titlepromo1 {
+  	font: 900 50px/28px 'Open Sans', 'Arial', sans-serif;
+  	position: relative;
+  	top: -4px;
+  	left: -1px;
+  	display: inline-block;
+  	float: none;
+  	vertical-align: bottom;
+  }
+  .promobox .titlepromo2 {
+  	font: 300 50px/28px 'Open Sans', 'Arial', sans-serif;
+  	position: relative;
+  	top: -4px;
+  	left: -1px;
+  	display: inline-block;
+  	float: none;
+  	vertical-align: bottom;
+  }
+  .promobox .promotexto2 {
+    height: 96px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    line-height: 26px;
+    padding: 40px 0;
+    text-align: center;
+  }
 }
