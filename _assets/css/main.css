@@ -5037,11 +5037,7 @@ li.main-nav.main-nav-right {
 	position: relative;
 }
 
-.sf-menu .main-nav li:active, .sf-menu .main-nav li:focus {
-	display: inline-block;
-	float: none;
-	vertical-align: middle;
-}
+
 
 .sf-menu .main-nav li a {
     font-family: 'Open Sans', 'Arial', sans-serif;
@@ -5355,7 +5351,7 @@ li.main-nav.main-nav-right ul li.active a {
 	}
 
 	.mobile-active .sf-menu li ul li a:hover {
-		color: #f26223;
+		color: #fff;
 	}
 
 	.mainmenu_wrapper {
