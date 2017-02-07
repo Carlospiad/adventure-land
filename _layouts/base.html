@@ -9,11 +9,13 @@
 <head>
   <title>{{ page.title }}</title>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="{{ page.description }}">
+  <meta name="author" content="BlueTide Web Consulting">
   <!--[if IE]>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <![endif]-->
   <meta name="theme-color" content="#3c4b86" />
-  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/png" href="{% asset_path 'images/favicon.png' %}"/>
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -139,6 +141,30 @@
 
         	});
 
+        </script>
+
+
+        <!-- SEO - Structured Data -->
+        <script type="application/ld+json">
+          {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "{{ site.title }}",
+            "url": "http://www.adventureland.com",
+            "logo": "{% asset_path 'images/logo.png' %}",
+            "contactPoint": [{
+              "@type": "ContactPoint",
+              "telephone": "{{ site.phone }}",
+     				  "email": "{{ site.email }}",
+              "contactType": "customer service"
+            }],
+            "address": [{
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Principal de Llano Bonito y Calle 3era",
+            "addressLocality": "Juan Díaz",
+            "addressRegion": "Ciudad de Panamá"
+            }]
+          }
         </script>
 
       </body>
