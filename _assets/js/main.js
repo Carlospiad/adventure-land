@@ -84,7 +84,7 @@ function pieChart() {
 function affixSidebarInit() {
 	var $affixAside = jQuery('.affix-aside');
 	if ($affixAside.length) {
-		
+
 			//on stick and unstick event
 			$affixAside.on('affix.bs.affix', function(e) {
 				var affixWidth = $affixAside.width() - 1;
@@ -95,11 +95,11 @@ function affixSidebarInit() {
 			}).on('affix-top.bs.affix affix-bottom.bs.affix', function(e) {
 				$affixAside.css({"width": "", "left": ""});
 			});
-			
+
 			//counting offset
 			var offsetTop = $affixAside.offset().top - jQuery('.page_header').height();
 			var offsetBottom = jQuery('.page_footer').outerHeight(true) + jQuery('.page_copyright').outerHeight(true);
-			
+
 			$affixAside.affix({
 				offset: {
 					top: offsetTop,
@@ -109,21 +109,21 @@ function affixSidebarInit() {
 
 			jQuery(window).on('resize', function() {
 				$affixAside.css({"width": "", "left": ""});
-				
+
 				if( $affixAside.hasClass('affix')) {
 					//returning sidebar in top position if it is sticked because of unexpacted behavior
 					$affixAside.removeClass("affix").css("left", "").addClass("affix-top");
 				}
 
-				var offsetTop = jQuery('.page_topline').outerHeight(true) 
-								+ jQuery('.page_toplogo').outerHeight(true) 
-								+ jQuery('.page_breadcrumbs').outerHeight(true) 
+				var offsetTop = jQuery('.page_topline').outerHeight(true)
+								+ jQuery('.page_toplogo').outerHeight(true)
+								+ jQuery('.page_breadcrumbs').outerHeight(true)
 								+ jQuery('.page_header').outerHeight(true);
 				var offsetBottom = jQuery('.page_footer').outerHeight(true) + jQuery('.page_copyright').outerHeight(true);
-				
+
 				$affixAside.data('bs.affix').options.offset.top = offsetTop;
 				$affixAside.data('bs.affix').options.offset.bottom = offsetBottom;
-				
+
 				$affixAside.affix('checkPosition');
 
 			});
@@ -225,7 +225,7 @@ function documentReadyInit() {
 	jQuery('.mainmenu').on('mouseover', 'ul li', function(){
 		if(MainWindowWidth > 991) {
 			var $this = jQuery(this);
-			// checks if third level menu exist         
+			// checks if third level menu exist
 			var subMenuExist = $this.find('ul').length;
 			if( subMenuExist > 0){
 				var subMenuWidth = $this.find('ul, div').first().width();
@@ -257,11 +257,11 @@ function documentReadyInit() {
 					$this.find('ul').first().css({
 						left: newSubMenuPosition,
 					});
-				} 
+				}
 			}
 		}
 	});
-	
+
 	/////////////////////////////////////////
 	//single page localscroll and scrollspy//
 	/////////////////////////////////////////
@@ -287,7 +287,7 @@ function documentReadyInit() {
 	if (jQuery().parallax) {
 		jQuery('.parallax').parallax("50%", 0.01);
 	}
-	
+
 	//prettyPhoto
 	if (jQuery().prettyPhoto) {
 		jQuery("a[data-gal^='prettyPhoto']").prettyPhoto({
@@ -295,7 +295,7 @@ function documentReadyInit() {
 			theme: 'facebook' /* light_rounded / dark_rounded / light_square / dark_square / facebook / pp_default*/
 		});
 	}
-	
+
 	////////////////////////////////////////
 	//init Twitter Bootstrap JS components//
 	////////////////////////////////////////
@@ -303,14 +303,14 @@ function documentReadyInit() {
 	if (jQuery().carousel) {
 		jQuery('.carousel').carousel();
 	}
-	//bootstrap tab - show first tab 
+	//bootstrap tab - show first tab
 	jQuery('.nav-tabs').each(function() {
 		jQuery(this).find('a').first().tab('show');
 	});
 	jQuery('.tab-content').each(function() {
 		jQuery(this).find('.tab-pane').first().addClass('fade in');
 	});
-	//bootstrap collapse - show first tab 
+	//bootstrap collapse - show first tab
 	jQuery('.panel-group').each(function() {
 		jQuery(this).find('a').first().filter('.collapsed').trigger('click');
 	});
@@ -350,7 +350,7 @@ function documentReadyInit() {
 					var filterValue = jQuery( this ).attr('data-filter');
 					jQuery(this).siblings().removeClass('selected active');
 					jQuery(this).addClass('selected active');
-					
+
 					//removing old items
 					$carousel.find('.owl-item').length;
 					for (var i = $carousel.find('.owl-item').length - 1; i >= 0; i--) {
@@ -361,12 +361,12 @@ function documentReadyInit() {
 					var $filteredItems = jQuery($carousel.next().find(' > ' +filterValue).clone());
 					$filteredItems.each(function() {
 						$carousel.trigger('add.owl.carousel', jQuery(this));
-						
+
 					});
-					
+
 					$carousel.trigger('refresh.owl.carousel');
 				});
-				
+
 			} //filters
 
 			$carousel.owlCarousel({
@@ -413,38 +413,7 @@ function documentReadyInit() {
 	//PHP widgets - contact form, search, MailChimp//
 	/////////////////////////////////////////////////
 
-	//contact form processing
-	jQuery('form.contact-form').on('submit', function( e ){
-		e.preventDefault();
-		var $form = jQuery(this);
-		jQuery($form).find('span.contact-form-respond').remove();
 
-		//checking on empty values
-		jQuery($form).find('[aria-required="true"], [required]').each(function(index) {
-			if (!jQuery(this).val().length) {
-				jQuery(this).addClass('invalid').on('focus', function(){jQuery(this).removeClass('invalid')});
-			}
-		});
-		//if one of form fields is empty - exit
-		if ($form.find('[aria-required="true"], [required]').hasClass('invalid')) {
-			return;
-		}
-
-		//sending form data to PHP server if fields are not empty
-		var request = $form.serialize();
-		var ajax = jQuery.post( "contact-form.php", request )
-		.done(function( data ) {
-			jQuery($form).find('[type="submit"]').attr('disabled', false).parent().append('<span class="contact-form-respond highlight">'+data+'</span>');
-			//cleaning form
-			var $formErrors = $form.find('.form-errors');
-			if ( !$formErrors.length ) {
-				$form[0].reset();
-			}
-		})
-		.fail(function( data ) {
-			jQuery($form).find('[type="submit"]').attr('disabled', false).parent().append('<span class="contact-form-respond highlight">Mail cannot be sent. You need PHP server to send mail.</span>');
-		})
-	});
 
 
 	//search modal
@@ -454,7 +423,7 @@ function documentReadyInit() {
 	});
 	//search form processing
 	jQuery('form.searchform').on('submit', function( e ){
-		
+
 		e.preventDefault();
 		var $form = jQuery(this);
 		var $searchModal = jQuery('#search_modal');
@@ -480,26 +449,13 @@ function documentReadyInit() {
 		})
 		.fail(function( data ) {
 			$searchModal.append('<div class="searchform-respond">Search cannot be done. You need PHP server to search.</div>');
-			
+
 		})
 	});
 
 	//MailChimp subscribe form processing
-	jQuery('.signup').on('submit', function( e ) {
-		e.preventDefault();
-		var $form = jQuery(this);
-		// update user interface
-		$form.find('.response').html('Adding email address...');
-		// Prepare query string and send AJAX request
-		jQuery.ajax({
-			url: 'mailchimp/store-address.php',
-			data: 'ajax=true&email=' + escape($form.find('.mailchimp_email').val()),
-			success: function(msg) {
-				$form.find('.response').html(msg);
-			}
-		});
-	});
-	
+
+
 	//twitter
 	if (jQuery().tweet) {
 		jQuery('.twitter').tweet({
@@ -508,7 +464,7 @@ function documentReadyInit() {
 			avatar_size: 48,
 			loading_text: 'loading twitter feed...',
 			join_text: 'auto',
-			username: 'ThemeForest', 
+			username: 'ThemeForest',
 			template: "{avatar}<div class=\"tweet_right\">{time}{join}<span class=\"tweet_text\">{tweet_text}</span></div>"
 		});
 	}
@@ -526,13 +482,13 @@ function documentReadyInit() {
 	if (jQuery().elevateZoom) {
 		jQuery('#product-image').elevateZoom({
 			gallery: 'product-image-gallery',
-			cursor: 'pointer', 
-			galleryActiveClass: 'active', 
-			responsive:true, 
+			cursor: 'pointer',
+			galleryActiveClass: 'active',
+			responsive:true,
 			loadingIcon: 'img/AjaxLoader.gif'
 		});
 	}
-	
+
 	//add review button
 	jQuery('.review-link').on('click', function( e ) {
 		var thisLink = jQuery(this);
@@ -561,7 +517,7 @@ function documentReadyInit() {
 			numberField.val(parseFloat(currentVal) + 1);
 		}
 	});
-	
+
 	//remove product from cart
 	jQuery('a.remove').on('click', function( e ) {
 		e.preventDefault();
@@ -584,7 +540,7 @@ function documentReadyInit() {
 		jQuery( ".slider_price_max" ).val( jQuery( ".slider-range-price" ).slider( "values", 1 ) );
 	}
 
-	//color filter 
+	//color filter
 	jQuery(".color-filters").find("a[data-background-color]").each(function() {
 		jQuery(this).css({"background-color" : jQuery(this).data("background-color")});
 	});
@@ -632,9 +588,9 @@ function documentReadyInit() {
 			$bmiWidget.find('.bmi-result').css({'display':'none'});
 
 			jQuery( ".bmi-range" ).each(function() {
-				
+
 				var $thisSlider = jQuery(this);
-				
+
 				var min = $thisSlider.data('slider-min') ? $thisSlider.data('slider-min') : 20;
 				var max = $thisSlider.data('slider-max') ? $thisSlider.data('slider-max') : 100;
 				var step = $thisSlider.data('slider-step') ? $thisSlider.data('slider-step') : 1;
@@ -696,7 +652,7 @@ function documentReadyInit() {
 function windowLoadInit() {
 	//chart
 	pieChart();
-	
+
 	//flexslider
 	if (jQuery().flexslider) {
 		var $introSlider = jQuery(".intro_section .flexslider");
@@ -704,9 +660,9 @@ function windowLoadInit() {
 			var $currentSlider = jQuery(this);
 			$currentSlider.flexslider({
 				animation: "fade",
-				pauseOnHover: true, 
+				pauseOnHover: true,
 				useCSS: true,
-				controlNav: true,   
+				controlNav: true,
 				directionNav: true,
 				prevText: "",
 				nextText: "",
@@ -749,14 +705,14 @@ function windowLoadInit() {
 
 		jQuery(".flexslider").each(function(index){
 			var $currentSlider = jQuery(this);
-			//exit if intro slider already activated 
+			//exit if intro slider already activated
 			if ($currentSlider.find('.flex-active-slide').length) {
 				return;
 			}
 			$currentSlider.flexslider({
 				animation: "fade",
 				useCSS: true,
-				controlNav: true,   
+				controlNav: true,
 				directionNav: false,
 				prevText: "",
 				nextText: "",
@@ -857,10 +813,10 @@ function windowLoadInit() {
 				} else {
 					jQuery(this).countTo().addClass('counted');
 				}
-				
+
 			});
 		});
-	
+
 	//bootstrap animated progressbar
 		if (jQuery().progressbar) {
 			jQuery('.progress .progress-bar').appear();
@@ -886,12 +842,12 @@ function windowLoadInit() {
 	} //appear check
 
 	if (jQuery().appear) {
-		
+
 	}
 
 
 	if (jQuery().appear) {
-		
+
 	}
 
 	//flickr
@@ -957,7 +913,7 @@ function windowLoadInit() {
 
 jQuery(document).ready( function() {
 	documentReadyInit();
-	
+
 	$(window).load(function() {
     $('.shop-flexslider').flexslider({
       animation: "fade",
@@ -965,7 +921,7 @@ jQuery(document).ready( function() {
       controlNav: "thumbnails"
     });
   });
-	
+
 }); //end of "document ready" event
 
 
@@ -984,7 +940,7 @@ jQuery(window).on('load', function(){
 
 			//map styles. You can grab different styles on https://snazzymaps.com/
 			var styles = [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}];
-			
+
 			//map settings
 			var address = $map.data('address') ? $map.data('address') : 'london, baker street, 221b';
 			var markerDescription = $map.find('.map_marker_description').prop('outerHTML');
@@ -995,12 +951,12 @@ jQuery(window).on('load', function(){
 
 			//type your address after "address="
 			jQuery.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address=' + address, function(data) {
-				
+
 				lat = data.results[0].geometry.location.lat;
 				lng = data.results[0].geometry.location.lng;
 
 			}).complete(function(){
-				
+
 				var center = new google.maps.LatLng(lat, lng);
 				var settings = {
 					mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -1008,7 +964,7 @@ jQuery(window).on('load', function(){
 					draggable: false,
 					scrollwheel: false,
 					center: center,
-					styles: styles 
+					styles: styles
 				};
 				map = new google.maps.Map($map[0], settings);
 
@@ -1019,10 +975,10 @@ jQuery(window).on('load', function(){
 					icon: markerIconSrc,
 				});
 
-				var infowindow = new google.maps.InfoWindow({ 
+				var infowindow = new google.maps.InfoWindow({
 					content: markerDescription
 				});
-				
+
 				google.maps.event.addListener(marker, 'click', function() {
 					infowindow.open(map,marker);
 				});
@@ -1046,7 +1002,7 @@ jQuery(window).on('resize', function(){
 			$header.first().data('bs.affix').options.offset.top = $header.offset().top;
 		}
 	jQuery(".page_header_wrapper").css({height: $header.first().outerHeight()}); //editing header wrapper height for smooth stick and unstick
-	
+
 });
 
 jQuery(window).scroll(function() {

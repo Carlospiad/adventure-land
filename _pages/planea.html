@@ -13,21 +13,21 @@ description: Alquiler de salones de fiestas para cumpleaños, eventos corporativ
     <div class="row">
       <div class="col-md-3">
 
-        <form class="contact-form contact-form-02 columns_padding_5" method="post" action="/">
+        <form class="contact-form contact-form-02" id="sendmail_budget">
           <h3 class="contact-form-02__title">Cotizador</h3>
           <small>Rellene todos los campos maracdos con (*)</small>
           <div class="contact-form-name">
-            <input type="text" aria-required="true" size="30" value="" name="name-cotz" id="name-cotz" class="form-control" placeholder="Nombre Completo *">
+            <input type="text" aria-required="true" size="30" name="name_budget" id="name_budget" class="form-control" placeholder="Nombre Completo *">
           </div>
           <div class="contact-form-email">
-            <input type="email" aria-required="true" size="30" value="" name="email-cotz" id="email-cotz" class="form-control" placeholder="Email *">
+            <input type="email" aria-required="true" size="30" name="email_budget" id="email_budget" class="form-control" placeholder="Email *">
           </div>
           <div class="contact-form-email">
-            <input type="number" size="15" value="" name="tel-cotz" id="tel-cotz" class="form-control" placeholder="Teléfono">
+            <input type="number" size="15" name="phone_budget" id="phone_budget" class="form-control" placeholder="Teléfono">
           </div>
           <div class="contact-form-name">
             <small>Servicio que desea *:</small>
-            <select class="form-control" id="sel1" aria-required="true">
+            <select class="form-control" id="servicio_budget" aria-required="true">
               <option>Cumpleaños</option>
               <option>Eventos Corporativos</option>
               <option>Eventos Especiales</option>
@@ -35,10 +35,28 @@ description: Alquiler de salones de fiestas para cumpleaños, eventos corporativ
               <option>Torneos</option>
             </select>
           </div>
+
           <div class="contact-form-message">
             <br>
-          <button type="submit" id="contact_form_submit-cotz" name="contact_submit-cotz" class="contact-form-02__button">Cotizar</button>
+          <a href="javascript:void(0);" class="contact-form-message contact-form-02__button" onclick="sendmail_budget('info@adventureland.com');" id="submit_budget">Cotizar</a>
         </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="notification red" id="notmailerror" style="display:none;" >
+              <p>
+                No se ha podido enviar su mensaje, por favor rellene los campos obligatorios (*).
+              </p>
+            </div>
+            <div class="notification" id="notmail" style="display:none;" >
+              <p>
+                Su mensaje ha sido enviado con éxito. Gracias por contactarnos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
         </form>
         <div class="parallax-title bg-white">
           <br>

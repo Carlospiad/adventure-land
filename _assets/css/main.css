@@ -17164,3 +17164,20 @@ background-color: #f26223;
     text-align: center;
   }
 }
+
+
+.form-control.required_contact {
+    background-color: #ffbcbc!important;
+}
+.notification {
+    font-size: 12px;
+    background-color: #c6f9b8;
+    padding: 10px 10px 1px;
+    line-height: 11px;
+    color: #099800;
+    margin-top: 10px;
+}
+.notification.red {
+    background-color: #f9b8b8;
+    color: #980000;
+}
