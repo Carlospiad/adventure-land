@@ -44,6 +44,52 @@ if (name == '' || !validateEmail(email)){
     $("#contactform :input").prop("disabled", true);
     }
 }
+function sendmail_sidebar(destino){
+//Lee contenido de los difrenetes campos del formulario y los asigna a variables
+var name = document.getElementById("sidebar-name").value;
+var email = document.getElementById("sidebar-email").value;
+var phone = document.getElementById("sidebar-phone").value;
+var service = document.getElementById("sidebar-service").value;
+//Validación de los campos requeridos (Nombre, Email)
+
+if (name == '' || !validateEmail(email)){
+    $("#sidebar-name").addClass( "required_contact" );
+    $("#sidebar-email").addClass( "required_contact" );
+    $("#sidebar-notmailerror").css("display", "block");
+}else {
+
+
+      $.ajax({
+        type: "POST",
+        url: "https://mandrillapp.com/api/1.0/messages/send.json",
+        data: {
+          'key': 'DzvIHhfL1BQ717q8JwAYCA', //API Key asiganada
+          'message': {
+            'from_email': email,
+            "from_name": name,
+            'to': [
+              {
+                'email': destino, //Destinatario del correo
+                'name': 'Contacto Website Sidebar', //Nombre del Remitente
+                'type': 'to'
+              }
+            ],
+            'subject': 'Contacto vía Website', //Titulo del correo
+            'html': '<h3>Nuevo contacto Website Adventure Land Panamá</h3><p>Nombre: ' + name + '</p><p>Email: ' + email + '</p><p>Teléfono: ' + phone + '</p><p>Servicio: ' + service + '</p><p><h5>Datos de contacto recibidos desde el formulario de contacto de adventureland.com</h5></p>'
+          }
+        }
+      });
+
+    /*Se ejecuta cuando el correo ya ha sido enviado*/
+
+    $("#sidebar-notmail").css("display", "block");
+    $("#sidebar-notmailerror").css("display", "none");
+    $("#sidebar-submit").css("display", "none");
+    $("#sidebar-name").removeClass( "required_contact" );
+    $("#sidebar-emai").removeClass( "required_contact" );
+    $("#sidebar-form :input").prop("disabled", true);
+    }
+}
 
 function sendmail_budget(destino){
 //Lee contenido de los difrenetes campos del formulario y los asigna a variables

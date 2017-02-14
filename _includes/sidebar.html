@@ -41,17 +41,24 @@
       </div>
       <div class="side-content">
         <small>Rellene los siguinetes datos</small>
-        <form class="sidebar-form">
-          <input type="text" placeholder="Su nombre">
-          <input type="email" placeholder="Su email">
-          <input type="text" placeholder="Su teléfono">
-          <select>
+        <form class="sidebar-form" id="sidebar-form">
+          <input type="text" id="sidebar-name" placeholder="Su nombre">
+          <input type="email" id="sidebar-email"placeholder="Su email">
+          <input type="text" id="sidebar-phone" placeholder="Su teléfono">
+          <select id="sidebar-service">
             <option value="">Seleccione servicios</option>
             <option value="eventos">Eventos</option>
             <option value="cumpleanos">Cumpleaños</option>
             <option value="empresa">Fiesta empresa</option>
           </select>
-          <a href="#" class="btn">Enviar solicitud</a>
+
+          <div id="sidebar-notmail" class="notification" style="display:none;">
+            Su mensaje ha sido enviado con éxito.
+          </div>
+          <div id="sidebar-notmailerror" class="notification red" style="display:none;">
+            Por favor rellene todos los campos obligatorios.
+          </div>
+          <a href="#" class="btn" id="sidebar-submit" onclick="sendmail_sidebar('info@adventureland.com');">Enviar solicitud</a>
         </form>
       </div>
     </div>
