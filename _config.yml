@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Advventure Land Panamá
-email: info@adventureland.com
+email: info@adventureland.com.pa
 phone: +507 3874166
-phone_url: 5073874166
+phone_url: 5073874167
 open: L-J 3:00pm - 7:30pm
 fb: https://www.facebook.com/adventurelandpty
 tw: http://twitter.com
@@ -68,7 +68,7 @@ attractions: [
 {
   "name": "Láser<br>Arena",
   "image": "atracciones_laser.jpg",
-  "age": "10a",
+  "age": "10a adultos",
   "description": "Declara la guerra láser en nuestra arena de juegos láser.",
   "link": "/atracciones/laser_arena/",
   "alt": "Adventure Land - Láser Arena"
