@@ -117,41 +117,7 @@
         <script src="{% asset_path 'js/vendor/owl.carousel.min.js' %}"></script>
         <script src="{% asset_path 'js/mail.js' %}"></script>
         {{ page.js }}
-        <script>
 
-        	$(document).ready(function() {
-
-        		$('#calendar').fullCalendar({
-
-        			header: {
-        				left: 'prev,next today',
-        				center: 'title',
-        				right: 'month,listYear'
-        			},
-
-        			displayEventTime: true, // don't show the time column in list view
-
-        			// THIS KEY WON'T WORK IN PRODUCTION!!!
-        			// To make your own Google API key, follow the directions here:
-        			// http://fullcalendar.io/docs/google_calendar/
-        			googleCalendarApiKey: 'AIzaSyB8hgXhMk1Du3FtkgwuXCAvlDxRMC7X-2w',
-
-        			// US Holidays
-        			events: 'reseller.bluetideconsulting.com_3sveof4rt9ljcm8fg03iam4498@group.calendar.google.com',
-
-        			eventClick: function(event) {
-        				// opens events in a popup window
-        				window.open(event.url, 'gcalevent', 'width=700,height=600');
-        				return false;
-        			},
-
-
-
-        		});
-
-        	});
-
-        </script>
 
 
         <!-- SEO - Structured Data -->

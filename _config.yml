@@ -24,16 +24,17 @@ gp: https://plus.google.com/b/100285964927383812666/100285964927383812666?hl=en
 ig: https://www.instagram.com/adventurelandpty
 pi: https://es.pinterest.com/
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://adventureland.com.pa" # the base hostname & protocol for your site, e.g. http://example.com
 host: "0.0.0.0"
 port: 8000
 # Asset configuration
 assets:
+
   cache: .asset-cache
   prefix: "/assets"
   assets:
     - "*"
-#  digest: true
+  #digest: true
   sources:
     - _assets
     - _assets/js
@@ -46,6 +47,7 @@ markdown: kramdown
 gems:
   - jekyll-assets
   - jekyll-feed
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock

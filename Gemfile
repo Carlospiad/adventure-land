@@ -12,6 +12,7 @@ ruby RUBY_VERSION
 gem "jekyll", "3.3.1"
 
 gem "uglifier"
+gem 'jekyll-sitemap'
 
 
 # If you have any plugins, put them here!
