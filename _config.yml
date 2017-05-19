@@ -15,12 +15,12 @@
 # in the templates via {{ site.myvariable }}.
 title: Advventure Land Panamá
 email: info@adventureland.com
-phone: +507 3874166
+phone: +507 387-4166
 phone_url: 5073874166
 open: L-J 3:00pm - 7:30pm
 fb: https://www.facebook.com/adventurelandpty
 tw: http://twitter.com
-gp: https://plus.google.com/
+gp: https://plus.google.com/b/100285964927383812666/100285964927383812666?hl=en
 ig: https://www.instagram.com/adventurelandpty
 pi: https://es.pinterest.com/
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -56,41 +56,25 @@ exclude:
 #Adventure Land - Arrays
 attractions: [
 {
-  "name": "PlayGround",
+  "name": "Adventure<br>Land",
   "image": "atracciones_playground.jpg",
-  "age": "0a",
-  "description": "Desde los 6 meses en adelante pueden los niños disfrutar.",
-  "link": "/atracciones/playground/",
+  "age": "0a 3a 10a",
+  "description": "Diversión para todos.",
+  "link": "/atracciones/adventureland/",
   "alt": "Adventure Land - Playground"
 },
 {
   "name": "Láser<br>Arena",
   "image": "atracciones_laser.jpg",
-  "age": "10a",
+  "age": "10a adultos",
   "description": "Declara la guerra láser en nuestra arena de juegos láser.",
   "link": "/atracciones/laser_arena/",
   "alt": "Adventure Land - Láser Arena"
 },
 {
-  "name": "Rope<br>Course",
-  "image": "atracciones_playground.jpg",
-  "age": "3a 10a",
-  "description": "Pasea por las alturas y desafía tus miedos.",
-  "link": "/atracciones/course_rope/",
-  "alt": "Adventure Land - Rope Course"
-},
-{
-  "name": "Pared de<br>Escalar",
-  "image": "atracciones_playground.jpg",
-  "age": "3a 10a",
-  "description": "Para que los niños intenten llegar a lo más alto.",
-  "link": "/atracciones/pared_escalar/",
-  "alt": "Adventure Land - Pared de Escalar"
-},
-{
   "name": "Futbol<br>Town",
   "image": "atracciones_futbol.jpg",
-  "age": "10a adultos",
+  "age": "0a 3a 10a adultos",
   "description": "Juega tus partidos de fútbol en las mejores canchas de Panamá.",
   "link": "/atracciones/futbol_town/",
   "alt": "Adventure Land - Fútbol Town"
@@ -98,7 +82,7 @@ attractions: [
 {
   "name": "igolf<br>",
   "image": "atracciones_igolf.jpg",
-  "age": "adultos",
+  "age": "3a 10a adultos",
   "description": "Prueba nuestro simulador de golf virtual.",
   "link": "/atracciones/igolf/",
   "alt": "Adventure Land - iGolf"
@@ -106,7 +90,7 @@ attractions: [
 ]
 gallery: [
 {
-  "name": "Fútbol Town",
+  "name": "Futbol Town",
   "image": "/assets/images/gallery/futbol-town-2.jpg",
   "attraction": "futbol",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
