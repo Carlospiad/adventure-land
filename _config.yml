@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Advventure Land Panamá
-email: info@adventureland.com
+email: info@adventureland.com.pa
 phone: +507 387-4166
 phone_url: 5073874166
 open: L-J 3:00pm - 7:30pm

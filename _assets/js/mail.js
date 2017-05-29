@@ -113,7 +113,6 @@ if (ninos == '' || adultos == '' || service == '' || name == '' || !validateEmai
     $("#service_budget").addClass( "required_contact" );
     $("#adultos_budget").addClass( "required_contact" );
     $("#notmailerror").css("display", "block");
-   alert(attraction);
 }else {
       $.ajax({
         type: "POST",
