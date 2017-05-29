@@ -371,17 +371,17 @@ input[type="tel"],
 textarea,
 select,
 .form-control {
-	border: none;
-	height: 40px;
-	border-color: #e1e1e1;
-	background-color: #ffffff;
-	border-radius: 0;
-	color: #1a1a1a;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 9px;
-	padding-bottom: 9px;
-	font-size: 16px;
+  border: none;
+    height: 40px;
+    border-color: #e1e1e1;
+    background-color: #ffffff;
+    border-radius: 0;
+    color: #52514f;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 12px;
 }
 
 textarea {
@@ -1276,6 +1276,12 @@ footer [class*="col-"] {
 		display: block;
 		width: auto;
 	}
+  .noleftpadding {
+    padding-right: 0px;
+}
+.norightpadding {
+  padding-left: 0px;
+}
 }
 
 @media screen and (max-width: 1199px) {
@@ -6675,6 +6681,20 @@ li.md-hidden {
 	left: 0;
 	text-transform: capitalize;
 }
+input#date_budget {
+    padding-left: 10px;
+}
+.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-top {
+    padding: 15px;
+    background-color: #f3f3f3;
+}
+.dropdown-menu {
+    font-size: 13px;
+}
+.table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th {
+    padding: 5px;
+    line-height: 16px;
+}
 .contact-form-02 .contact-form-02__title::before {
 	font: 600 65px/50px 'Open Sans', 'Arial', sans-serif;
 	color: #fff;
@@ -6689,7 +6709,7 @@ li.md-hidden {
 }
 
 .contact-form small {
-    font-size: 13px;
+    font-size: 12px;
     color: #c7c7c7;
 }
 .section-title.no-after:after {
@@ -6788,13 +6808,16 @@ li.md-hidden {
 	margin-bottom: 10px;
 }
 
-.contact-form-02 .contact-form-subject .form-control {
+.contact-form-02 .contact-form-subject .form-control  {
 	height: 45px;
+}
+.contact-form-02  textarea.form-control  {
+	height: 140px!important;
 }
 
 .contact-form-02 .form-control {
 	box-sizing: border-box;
-	padding-left: 20px;
+	padding-left: 5px;
 	padding-right: 20px;
 }
 
@@ -17098,6 +17121,7 @@ background-color: #f26223;
 
 
 @media (max-width: 767px) {
+
   .promobox {
     background: #f26223;
     margin-bottom: 33px;
@@ -17186,4 +17210,10 @@ background-color: #f26223;
 }
 .required_contact {
     background-color: #fd5757!important;
+}
+.noleftpadding{
+  padding-left: 0px
+}
+.norightpadding{
+  padding-right: 0px
 }

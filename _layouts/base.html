@@ -108,13 +108,13 @@
             {% include footer.html %}
           </div>
         </div>
-
-
         <script src="{% asset_path 'js/compressed.js' %}"></script>
         <script src="{% asset_path 'js/main.js' %}"></script>
         <script src="{% asset_path 'js/main-menu.js' %}"></script>
         <script src="{% asset_path 'js/classie.js' %}"></script>
         <script src="{% asset_path 'js/vendor/owl.carousel.min.js' %}"></script>
+        <script src="{% asset_path 'js/date.min.js' %}"></script>
+        <script src="{% asset_path 'js/locales/date.es.min.js' %}"></script>
         <script src="{% asset_path 'js/mail.js' %}"></script>
         {{ page.js }}
 
@@ -141,6 +141,12 @@
             "addressRegion": "Ciudad de Panamá"
             }]
           }
+        </script>
+        <script type="text/javascript">
+        $('#date_budget').datepicker({
+            format: "dd/mm/yyyy",
+            language: "es"
+        });
         </script>
 
       </body>

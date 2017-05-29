@@ -96,9 +96,13 @@ function sendmail_budget(destino){
 var name = document.getElementById("name_budget").value;
 var email = document.getElementById("email_budget").value;
 var phone = document.getElementById("phone_budget").value;
-var servicio = document.getElementById("servicio_budget").value;
+var service = document.getElementById("service_budget").value;
+var attraction = document.getElementById("attraction_budget").value;
+var date = document.getElementById("date_budget").value;
 var ninos = document.getElementById("ninos_budget").value;
 var adultos = document.getElementById("adultos_budget").value;
+var hours = document.getElementById("hours_budget").value;
+var msg = document.getElementById("message_budget").value;
 
 //Validación de los campos requeridos (Nombre, Email)
 
@@ -125,7 +129,7 @@ if (name == '' || !validateEmail(email)){
               }
             ],
             'subject': 'Cotización vía Website', //Titulo del correo
-            'html': '<h3>Nuevo contacto Website Adventure Land Panamá</h3><p>Nombre: ' + name + '</p><p>Email: ' + email + '</p><p>Teléfono: ' + phone + '</p><p>Servicio deseado: ' + servicio + '</p><p>Cantidad de Niños: ' + ninos + '</p><p>Cantidad de Adultos: ' + adultos + '</p><p><h5>Datos de contacto recibidos desde el formulario de cotización de adventureland.com.pa</h5></p>'
+            'html': '<h3>Nuevo contacto Website Adventure Land Panamá</h3><p>Nombre: ' + name + '</p><p>Email: ' + email + '</p><p>Teléfono: ' + phone + '</p><p>Servicio deseado: ' + service + '</p><p>Atracción: ' + attraction + '</p><p>Cantidad de Niños: ' + ninos + '</p><p>Cantidad de Adultos: ' + adultos + '</p><p>Fecha: ' + date + '</p><p>Hprarios: ' + hours + '</p><p>Información adicional: ' + msg + '</p><p><h5>Datos de contacto recibidos desde el formulario de cotización de adventureland.com.pa</h5></p>'
           }
         }
       });

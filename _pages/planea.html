@@ -11,23 +11,23 @@ description: Alquiler de salones de fiestas para cumpleaños, eventos corporativ
 <div class="section_padding_top_30 section_padding_bottom_70">
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-4">
 
         <form class="contact-form contact-form-02" id="sendmail_budget">
           <h3 class="contact-form-02__title">Cotizador</h3>
           <small>Rellene todos los campos maracdos con (*)</small>
-          <div class="contact-form-name">
+          <div class="col-md-12  noleftpadding norightpadding contact-form-name">
             <input type="text" aria-required="true" size="30" name="name_budget" id="name_budget" class="form-control" placeholder="Nombre Completo *">
           </div>
-          <div class="contact-form-email">
+          <div class="col-md-12  noleftpadding norightpadding contact-form-email">
             <input type="email" aria-required="true" size="30" name="email_budget" id="email_budget" class="form-control" placeholder="Email *">
           </div>
-          <div class="contact-form-email">
+          <div class="col-md-12  noleftpadding norightpadding contact-form-email">
             <input type="number" size="15" name="phone_budget" id="phone_budget" class="form-control" placeholder="Teléfono">
           </div>
-          <div class="contact-form-name">
+          <div class="col-md-12  noleftpadding norightpadding contact-form-name">
             <small>Servicio que desea *:</small>
-            <select class="form-control" id="servicio_budget" aria-required="true">
+            <select class="form-control" id="service_budget" aria-required="true">
               <option>Cumpleaños</option>
               <option>Eventos Corporativos</option>
               <option>Eventos Especiales</option>
@@ -35,7 +35,17 @@ description: Alquiler de salones de fiestas para cumpleaños, eventos corporativ
               <option>Torneos</option>
             </select>
           </div>
-          <div class="contact-form-name">
+          <div class="col-md-12  noleftpadding contact-form-name norightpadding">
+            <small>Atracciones:</small>
+            <select class="form-control" id="attraction_budget" aria-required="true">
+              <option>Playground</option>
+              <option>Rope Course</option>
+              <option>Climbing</option>
+              <option>Futbol Town</option>
+              <option>Laser Arena</option>
+            </select>
+          </div>
+          <div class="col-md-6  noleftpadding contact-form-name">
             <small>Cantidad de Niños *:</small>
             <select class="form-control" id="ninos_budget" aria-required="true">
               <option>1</option>
@@ -51,7 +61,7 @@ description: Alquiler de salones de fiestas para cumpleaños, eventos corporativ
               <option>Más de 10</option>
             </select>
           </div>
-          <div class="contact-form-name">
+          <div class="col-md-6  norightpadding contact-form-name">
             <small>Cantidad de Adultos *:</small>
             <select class="form-control" id="adultos_budget" aria-required="true">
               <option>1</option>
@@ -67,11 +77,29 @@ description: Alquiler de salones de fiestas para cumpleaños, eventos corporativ
               <option>Más de 10</option>
             </select>
           </div>
+          <div class="col-md-6  noleftpadding contact-form-name">
+            <small>Horario:</small>
+            <select class="form-control" id="hours_budget" aria-required="true">
+              <option>11 am a 2 pm</option>
+              <option>4 pm a 7 pm</option>
+              <option>otro</option>
+            </select>
+          </div>
 
-          <div class="contact-form-message">
+          <div class="col-md-6  norightpadding contact-form-name">
+            <small>Fecha Solicitada:</small>
+            <input type="text" class="form-control" id="date_budget">
+
+
+          </div>
+          <div class="col-md-12  noleftpadding norightpadding contact-form-name">
+            <small>Información Adicional:</small>
+             <textarea aria-required="true" rows="8" cols="45" name="message" id="message_budget" class="form-control" placeholder="Información adicional"></textarea>
+          </div>
+          <div class="col-md-12 noleftpadding norightpadding contact-form-message">
             <br>
-          <a href="javascript:void(0);" class="contact-form-message contact-form-02__button" onclick="sendmail_budget('info@adventureland.com.pa');" id="submit_budget">Cotizar</a>
-        </div>
+            <a href="javascript:void(0);" class="contact-form-message contact-form-02__button" onclick="sendmail_budget('info@adventureland.com.pa');" id="submit_budget">Cotizar</a>
+          </div>
 
         <div class="row">
           <div class="col-md-12">
@@ -98,53 +126,55 @@ description: Alquiler de salones de fiestas para cumpleaños, eventos corporativ
         <!--<a href="{% link calendario.html %}" class="btn">Ver Calendario</a>-->
       </div>
 
+      <div class="col-md-8">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <div class="banner-01 text-center">
+            <div class="banner-01__icon-wrapp">
+              <i class="fa fa-birthday-cake" aria-hidden="true"></i>
+            </div>
+            <h3 class="banner-01__title">Cumpleaños</h3>
+            <p class="banner-01__text">Prepara las  fiestas de cumpleaños de todos en la familia, tenemos paquetes que incluyen desde los más pequeños de la casa hasta los más grandes.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <div class="banner-01 text-center">
+            <div class="banner-01__icon-wrapp">
+              <i class="fa fa-briefcase" aria-hidden="true"></i>
+            </div>
+            <h3 class="banner-01__title">Eventos Corporativos</h3>
+            <p class="banner-01__text">Fiestas corporativas, tanto para niños como adultos pueden ser celebradas en nuestras instalaciones.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <div class="banner-01 text-center">
+            <div class="banner-01__icon-wrapp">
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h3 class="banner-01__title">Eventos Especiales</h3>
+            <p class="banner-01__text">Trip del colegio, fin de curso, charlas, cursos y más pueden ser realizados en nuestro parque.</p>
+          </div>
+        </div>
 
-      <div class="col-sm-3 col-md-3 col-lg-3">
-        <div class="banner-01 text-center">
-          <div class="banner-01__icon-wrapp">
-            <i class="fa fa-birthday-cake" aria-hidden="true"></i>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <div class="banner-01 text-center">
+            <div class="banner-01__icon-wrapp">
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            </div>
+            <h3 class="banner-01__title">Eventos de Colegios</h3>
+            <p class="banner-01__text">Pro graduación, recaudación de fondos, etc.</p>
           </div>
-          <h3 class="banner-01__title">Cumpleaños</h3>
-          <p class="banner-01__text">Prepara las  fiestas de cumpleaños de todos en la familia, tenemos paquetes que incluyen desde los más pequeños de la casa hasta los más grandes.</p>
         </div>
-      </div>
-      <div class="col-sm-3 col-md-3 col-lg-3">
-        <div class="banner-01 text-center">
-          <div class="banner-01__icon-wrapp">
-            <i class="fa fa-briefcase" aria-hidden="true"></i>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <div class="banner-01 text-center">
+            <div class="banner-01__icon-wrapp">
+              <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <h3 class="banner-01__title">Torneos</h3>
+            <p class="banner-01__text">Torneos de<br>fútbol o de golf.</p>
           </div>
-          <h3 class="banner-01__title">Eventos Corporativos</h3>
-          <p class="banner-01__text">Fiestas corporativas, tanto para niños como adultos pueden ser celebradas en nuestras instalaciones.</p>
-        </div>
-      </div>
-      <div class="col-sm-3 col-md-3 col-lg-3">
-        <div class="banner-01 text-center">
-          <div class="banner-01__icon-wrapp">
-            <i class="fa fa-star" aria-hidden="true"></i>
-          </div>
-          <h3 class="banner-01__title">Eventos Especiales</h3>
-          <p class="banner-01__text">Trip del colegio, fin de curso, charlas, cursos y más pueden ser realizados en nuestro parque.</p>
         </div>
       </div>
 
-      <div class="col-sm-3 col-md-3 col-lg-3">
-        <div class="banner-01 text-center">
-          <div class="banner-01__icon-wrapp">
-            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-          </div>
-          <h3 class="banner-01__title">Eventos de Colegios</h3>
-          <p class="banner-01__text">Pro graduación, recaudación de fondos, etc.</p>
-        </div>
-      </div>
-      <div class="col-sm-3 col-md-3 col-lg-3">
-        <div class="banner-01 text-center">
-          <div class="banner-01__icon-wrapp">
-            <i class="fa fa-trophy" aria-hidden="true"></i>
-          </div>
-          <h3 class="banner-01__title">Torneos</h3>
-          <p class="banner-01__text">Torneos de<br>fútbol o de golf.</p>
-        </div>
-      </div>
 
     </div>
 
