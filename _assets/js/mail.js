@@ -97,7 +97,7 @@ var name = document.getElementById("name_budget").value;
 var email = document.getElementById("email_budget").value;
 var phone = document.getElementById("phone_budget").value;
 var service = document.getElementById("service_budget").value;
-var attraction = document.getElementById("attraction_budget").value;
+var attraction = $("#attraction_budget").val();
 var date = document.getElementById("date_budget").value;
 var ninos = document.getElementById("ninos_budget").value;
 var adultos = document.getElementById("adultos_budget").value;
@@ -106,13 +106,15 @@ var msg = document.getElementById("message_budget").value;
 
 //Validación de los campos requeridos (Nombre, Email)
 
-if (name == '' || !validateEmail(email)){
+if (ninos == '' || adultos == '' || service == '' || name == '' || !validateEmail(email)){
     $("#name_budget").addClass( "required_contact" );
     $("#email_budget").addClass( "required_contact" );
+    $("#ninos_budget").addClass( "required_contact" );
+    $("#service_budget").addClass( "required_contact" );
+    $("#adultos_budget").addClass( "required_contact" );
     $("#notmailerror").css("display", "block");
+   alert(attraction);
 }else {
-
-
       $.ajax({
         type: "POST",
         url: "https://mandrillapp.com/api/1.0/messages/send.json",
