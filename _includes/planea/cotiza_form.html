@@ -1,0 +1,108 @@
+
+        <form class="contact-form contact-form-02" id="sendmail_budget">
+          <h3 class="contact-form-02__title">Cotizador</h3>
+          <small><strong>Rellene todos los campos maracdos con (*)</strong></small>
+          <div class="col-md-12  noleftpadding norightpadding contact-form-name">
+            <input type="text" aria-required="true" size="30" name="name_budget" id="name_budget" class="form-control" placeholder="Nombre Completo *">
+          </div>
+          <div class="col-md-12  noleftpadding norightpadding contact-form-email">
+            <input type="email" aria-required="true" size="30" name="email_budget" id="email_budget" class="form-control" placeholder="Email *">
+          </div>
+          <div class="col-md-12  noleftpadding norightpadding contact-form-email">
+            <input type="number" size="15" name="phone_budget" id="phone_budget" class="form-control" placeholder="Teléfono">
+          </div>
+          <div class="col-md-12  noleftpadding norightpadding contact-form-name">
+            <small><strong>Servicio que desea *:</strong></small>
+            <select class="form-control" id="service_budget" aria-required="true">
+              <option>Cumpleaños</option>
+              <option>Eventos Corporativos</option>
+              <option>Eventos Especiales</option>
+              <option>Eventos de Colegios</option>
+              <option>Torneos</option>
+            </select>
+          </div>
+          <div class="col-md-12  noleftpadding contact-form-name norightpadding">
+            <small><strong>Atracciones</strong><br> (Mantenga presionado Ctrl para multiselección)</small>
+            <select class="form-control" id="attraction_budget" aria-required="true" multiple>
+              <option value="Playground">Playground</option>
+              <option value="Rope Course">Rope Course</option>
+              <option value="Climbing">Climbing</option>
+              <option value="Futbol Town">Futbol Town</option>
+              <option value="Laser Arena">Laser Arena</option>
+            </select>
+          </div>
+          <div class="col-md-6  noleftpadding contact-form-name">
+            <small><strong>Cantidad de Niños *:</strong></small>
+            <select class="form-control" id="ninos_budget" aria-required="true">
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>Más de 10</option>
+            </select>
+          </div>
+          <div class="col-md-6  norightpadding contact-form-name">
+            <small><strong>Cantidad de Adultos *:</strong></small>
+            <select class="form-control" id="adultos_budget" aria-required="true">
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>Más de 10</option>
+            </select>
+          </div>
+          <div class="col-md-6  noleftpadding contact-form-name">
+            <small><strong>Horario:</strong></small>
+            <select class="form-control" id="hours_budget" aria-required="true">
+              <option>11 am a 2 pm</option>
+              <option>4 pm a 7 pm</option>
+              <option>otro</option>
+            </select>
+          </div>
+
+          <div class="col-md-6  norightpadding contact-form-name">
+            <small><strong>Fecha Solicitada:</strong></small>
+            <input type="text" class="form-control" id="date_budget" placeholder="dd/mm/aaaa">
+
+
+          </div>
+          <div class="col-md-12  noleftpadding norightpadding contact-form-name">
+            <small><strong>Información Adicional:</strong></small>
+             <textarea aria-required="true" rows="8" cols="45" name="message" id="message_budget" class="form-control" placeholder="Información adicional"></textarea>
+          </div>
+          <div class="col-md-12 noleftpadding norightpadding contact-form-message">
+            <br>
+            <a href="javascript:void(0);" class="contact-form-message contact-form-02__button" onclick="sendmail_budget('info@adventureland.com.pa');" id="submit_budget">Cotizar</a>
+          </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="notification red" id="notmailerror" style="display:none;" >
+              <p>
+                No se ha podido enviar su mensaje, por favor rellene los campos obligatorios (*).
+              </p>
+            </div>
+            <div class="notification" id="notmail" style="display:none;" >
+              <p>
+                Su mensaje ha sido enviado con éxito. Gracias por contactarnos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        </form>

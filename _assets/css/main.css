@@ -6499,6 +6499,7 @@ li.md-hidden {
 .prices-01__list {
 	padding: 0;
 	margin: 0 15px 40px 15px;
+  min-height: 60px;
 }
 
 .prices-01__list li {
@@ -17222,4 +17223,7 @@ background-color: #f26223;
 }
 .norightpadding{
   padding-right: 0px
+}
+.nopadding{
+  padding: 0px
 }
