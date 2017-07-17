@@ -8987,7 +8987,23 @@ ul.pagination.pagination-type-1 li:last-child a:hover::before, ul.pagination.pag
 	left: 0;
 	text-transform: capitalize;
 }
-
+.contact-form input, .contact-form select, .contact-form textarea{
+    width: 100%;
+}
+input.button {
+    width: inherit;
+    font: bold 14px/12px 'Open Sans', 'Arial', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #f26223;
+    border: none;
+    border: none;
+    padding: 10px 22px;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    font-weight: 900;
+    font-style: italic;
+}
 .title-03 {
 	font: 36px/38px 'Open Sans', 'Arial', sans-serif;
 	color: #fff;

@@ -1,0 +1,111 @@
+<!-- Note :
+- You can modify the font style and form style to suit your website.
+- Code lines with comments “Do not remove this code”  are required for the form to work properly, make sure that you do not remove these lines of code.
+- The Mandatory check script can modified as to suit your business needs.
+- It is important that you test the modified form before going live.-->
+<div id='crmWebToEntityForm'>
+  <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset=UTF-8'>
+    <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads2662039000000151003 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory()' accept-charset='UTF-8' class="contact-form contact-form-02">
+      <h3 class="contact-form-02__title">Formulario de contacto</h3>
+      <!-- Do not remove this code. -->
+      <input type='text' style='display:none;' name='xnQsjsdp' value='18917be9b6cd5e57e2778e137a9941c2fdb1e0e9f2ccab3a703772a6cab81de8'/>
+      <input type='hidden' name='zc_gad' id='zc_gad' value=''/>
+      <input type='text' style='display:none;' name='xmIwtLD' value='52ae16e22a49ea8a8647b8098683f7cab4c9865b2668be4f2954ce0f0466e51b'/>
+      <input type='text' style='display:none;'  name='actionType' value='TGVhZHM='/>
+
+      <input type='text' style='display:none;' name='returnURL' value='http&#x3a;&#x2f;&#x2f;adventureland.com.pa&#x2f;gracias&#x2f;' />
+      <!-- Do not remove this code. -->
+      <div class="col-md-6   noleftpadding contact-form-name">
+        <input type='text'   maxlength='40' name='First Name' placeholder="Nombre" />
+      </div>
+      <div class="col-md-6  norightpadding contact-form-name">
+        <input type='text'   maxlength='80' name='Last Name' placeholder="Apellido"  />
+      </div>
+      <div class="col-md-6  noleftpadding  contact-form-name">
+        <input type='text'   maxlength='100' name='Email' placeholder="Email"  />
+      </div>
+      <div class="col-md-6  norightpadding contact-form-name">
+        <input type='text'   maxlength='30' name='Phone' placeholder="Teléfono" />
+      </div>
+
+      <div class="col-md-12  noleftpadding norightpadding contact-form-name">
+        <small><strong>Servicio que desea:</strong></small>
+        <select  name='LEADCF1'>
+          <option value='-None-'>-Ninguno-</option>
+          <option value='Cumplea&ntilde;os'>Cumplea&ntilde;os</option>
+          <option value='Eventos&#x20;Corporativos'>Eventos Corporativos</option>
+          <option value='Eventos&#x20;de&#x20;Colegios'>Eventos de Colegios</option>
+          <option value='Torneos'>Torneos</option>
+        </select>
+      </div>
+
+      <div class="col-md-12  noleftpadding  norightpadding contact-form-name">
+        <small><strong>Información adicional:</strong></small>
+        <textarea name='LEADCF4' maxlength='2000' >&nbsp;</textarea>
+      </diV>
+      <select  class="hidden" name='Lead Source'>
+        <option value='-None-'>Ninguno</option>
+        <option value='Accionistas'>Accionistas</option>
+        <option value='Alias&#x20;del&#x20;correo&#x20;electr&oacute;nico&#x20;de&#x20;ventas'>Alias del correo electr&oacute;nico de ventas</option>
+        <option value='Llam&oacute;&#x20;por&#x20;tel&eacute;fono'>Llam&oacute; por tel&eacute;fono</option>
+        <option selected value='Pagina&#x20;Web&#x20;-&#x20;adventureland.com.pa'>Pagina Web - adventureland.com.pa</option>
+        <option value='Recomendaci&oacute;n&#x20;de&#x20;empleado'>Recomendaci&oacute;n de empleado</option>
+        <option value='Redes&#x20;sociales'>Redes sociales</option>
+        <option value='Relaciones&#x20;p&uacute;blicas'>Relaciones p&uacute;blicas</option>
+        <option value='Walk&#x20;in'>Walk in</option>
+        <option value='Facebook'>Facebook</option>
+        <option value='Twitter'>Twitter</option>
+        <option value='Google&#x2b;'>Google&#x2b;</option>
+      </select>
+
+      <tr><td colspan='2' style='text-align:center; padding-top:15px;'>
+        <input  type='submit' class="button oragen" value='Enviar' />
+        <input type='reset' class="button gray" value='Restablecer' />
+      </td>
+    </tr>
+  </table>
+  <script>
+  var mndFileds=new Array('Last Name');
+  var fldLangVal=new Array('Apellidos');
+  var name='';
+  var email='';
+
+  function checkMandatory() {
+    for(i=0;i<mndFileds.length;i++) {
+      var fieldObj=document.forms['WebToLeads2662039000000151003'][mndFileds[i]];
+      if(fieldObj) {
+        if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0) {
+          if(fieldObj.type =='file')
+          {
+            alert('Seleccione un archivo para cargar.');
+            fieldObj.focus();
+            return false;
+          }
+          alert(fldLangVal[i] +' no puede estar vacío.');
+          fieldObj.focus();
+          return false;
+        }  else if(fieldObj.nodeName=='SELECT') {
+          if(fieldObj.options[fieldObj.selectedIndex].value=='-None-') {
+            alert(fldLangVal[i] +' no puede ser nulo.');
+            fieldObj.focus();
+            return false;
+          }
+        } else if(fieldObj.type =='checkbox'){
+          if(fieldObj.checked == false){
+            alert('Please accept  '+fldLangVal[i]);
+            fieldObj.focus();
+            return false;
+          }
+        }
+        try {
+          if(fieldObj.name == 'Last Name') {
+            name = fieldObj.value;
+          }
+        } catch (e) {}
+      }
+    }
+  }
+
+  </script>
+</form>
+</div>
