@@ -1,0 +1,26 @@
+body{
+    background-color: #424242;
+}
+input, select{
+background-color: #e2e2e2;
+font-size: 12px;
+width: 100%;
+margin-bottom: 10px;
+border: none;
+padding: 12px 20px;
+color:#444;
+}
+input.button {
+    background-color: #f26223;
+    color: #fff;
+    font-weight: 100;
+    text-transform: uppercase;
+    width: inherit;
+    padding: 10px;
+}
+input.button.gray {
+    background-color: #28377a;
+}
+.hidden{
+  display:none;
+}
