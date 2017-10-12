@@ -8987,7 +8987,23 @@ ul.pagination.pagination-type-1 li:last-child a:hover::before, ul.pagination.pag
 	left: 0;
 	text-transform: capitalize;
 }
-
+.contact-form input, .contact-form select, .contact-form textarea{
+    width: 100%;
+}
+input.button {
+    width: inherit;
+    font: bold 14px/12px 'Open Sans', 'Arial', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #f26223;
+    border: none;
+    border: none;
+    padding: 10px 22px;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    font-weight: 900;
+    font-style: italic;
+}
 .title-03 {
 	font: 36px/38px 'Open Sans', 'Arial', sans-serif;
 	color: #fff;
@@ -14560,7 +14576,33 @@ html[xmlns] .slides {
 	opacity: 1;
 	cursor: default;
 }
+a.button.oragen {
+    width: inherit;
+    font: bold 14px/12px 'Open Sans', 'Arial', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #f26223;
+    border: none;
+    border: none;
+    padding: 10px 22px;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    font-weight: 900;
+    font-style: italic;
+    display: inline-block;
+    margin-top: 5px;
+}
+a.button.oragen:hover {
+    color: #f26223;
+    background: #fff;
+    cursor: pointer;
 
+}
+.side-desc-content{
+  font-size: 13.5px;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
 @media screen and (max-width: 600px) {
 	.flex-direction-nav .flex-prev {
 		top: 14%;
@@ -16208,6 +16250,9 @@ a.btn {
     float: left;
     margin-top: 15px;
     margin-left: 15px;
+}
+iframe.side-form {
+    height: 320px;
 }
 @media (max-width: 600px) {
 	.gallery-columns-4 .gallery-item,
