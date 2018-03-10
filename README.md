@@ -1,5 +1,5 @@
-# adventure-land
-Website para Adventure Land
+# Kids to go
+Website para Kids To Go
 
 
 Comandos para trabajar en la terminal y mod el website
@@ -9,7 +9,9 @@ jekyll build
 s3_website push
 jekyll serve
 ```
-Usage
+f
+
+s3_website Usage
 Here's how you can get started:
 
 Create API credentials that have sufficient permissions to S3. More info here.
