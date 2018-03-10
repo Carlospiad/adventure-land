@@ -13,18 +13,18 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Advventure Land Panamá
-email: info@adventureland.com.pa
+title: Kids To Go  Panamá
+email: info@kidstogopanama.com
 phone: +507 302-7750
 phone_url: 5073874167
 open: L-J 3:00pm - 7:30pm
-fb: https://www.facebook.com/adventurelandpty
+fb: https://www.facebook.com/Kidstogopanama
 tw: http://twitter.com
 gp: https://plus.google.com/b/100285964927383812666/100285964927383812666?hl=en
 ig: https://www.instagram.com/adventurelandpty
 pi: https://es.pinterest.com/
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://adventureland.com.pa" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://kidstogopanama.com" # the base hostname & protocol for your site, e.g. http://example.com
 host: "0.0.0.0"
 port: 8000
 # Asset configuration
